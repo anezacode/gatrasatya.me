@@ -1,0 +1,351 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+
+::selection {
+    background-color: darkorange;
+}
+
+br, input, img, button {
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: diff-mono;
+    src: url(computo-monospace.otf);
+}
+
+body.index {
+    background-color: black;
+    margin: 5vh 10vw 5vh 10vw;
+    color: white;
+}
+
+body.index form.form {
+    margin-top: 40vh;
+    user-select: none;
+}
+
+h1.logo {
+    font-size: medium;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    padding: 10px;
+    user-select: text;
+    font-family: diff-mono;
+}
+
+body.index input.safety {
+    background-color: rgb(20,20,20);
+    color: gray;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-decoration: none;
+    margin: 2px;
+    user-select: none;
+    cursor: not-allowed;
+    font-family: monospace;
+}
+
+body.index input[type=submit].access {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    margin: 2px;
+    user-select: none;
+    cursor: not-allowed;
+    font-family: monospace;
+}
+
+body.index input[type=submit].access:hover {
+    background-color: rgb(200,200,200);
+}
+
+body.index input[type=submit].access:active {
+    background-color: rgb(20,20,20);
+    color: grey;
+}
+
+@media screen and (max-width: 320px) {
+    
+    body.index input[type=submit].access {
+        align-items: center;
+        margin-top: 5px;
+        border-radius: 10px;
+        width: 65%;
+    }
+}
+
+body.index p.nojavascript {
+    margin-top: 20px;
+    color: gray;
+    font-size: smaller;
+    font-family: monospace;
+}
+
+
+body.main {
+    color: white;
+    font-family: monospace;
+}
+
+body.main nav.navbar {
+    background-color: black;
+    border-bottom: 1px solid rgb(20,20,20);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+@media screen and (max-width: 320px) {
+    body.main h1.logo {
+        font-size: small;
+    }
+}
+
+body.main div.banner {
+    position: relative;
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    body.main div.banner {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 329px) {
+    body.main div.banner {
+        height: 110vh;
+    }
+}
+
+body.main div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body.main div.banner > div.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    body.main div.banner > div.content {
+        padding-top: 14vh;
+        display: block;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body.main div.banner > div.content {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
+body.main img.pfp {
+    width: 36vh;
+    height: 100%;
+    border-radius: 32px;
+    box-shadow: 0px 0px 50px 1px grey;
+    cursor: help;
+    transition: 1s;
+    filter: brightness(120%);
+}
+
+body.main img.pfp:hover {
+    filter: brightness(500%);
+}
+
+body.main div.bio {
+    margin: 50px;
+    margin-top: 35px;
+    line-height: 1.5;
+}
+
+body.main div.bio h1 {
+    font-size: xx-large;
+}
+
+body.main div.bio p {
+    font-size: medium;
+    color: gainsboro;
+    width: 20vw;
+}
+
+body.main button.vbtn {
+    margin-top: 10px;
+    margin-right: 2px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(20,20,20);
+    padding: 8px 20px 8px 20px;
+    font-weight: bold;
+}
+
+body.main button.cvbtn {
+    margin-top: 10px;
+    margin-left: 2px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(100,100,100);
+    color: white;
+    padding: 8px 20px 8px 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body.main img.pfp {
+        margin-left: 0;
+        width: 32vw;
+        border-radius: 21px;
+    }
+
+    body.main div.bio {
+        line-height: 1.25;
+    }
+
+    body.main div.bio h1 {
+        font-size: xx-large;
+    }
+    
+    body.main div.bio p {
+        margin-top: 12px;
+        font-size: smaller;
+        width: auto;
+    }
+
+    body.main div.dbtn {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body.main img.pfp {
+        width: 46vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body.main img.pfp {
+        width: 50vw;
+        border-radius: 25px;
+    }
+
+    body.main button.vbtn {
+        width: 100%;
+    }
+
+    body.main button.cvbtn {
+        margin-left: -1px;
+        width: 100%;
+    }
+}
+
+body.main div.contact {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8%;
+}
+
+body.main div.links {
+    box-shadow: 0px 0px 20px 1px grey;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body.main div.links:hover {
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+body.main div.links:active {
+    box-shadow: 0px 0px 2px 0.5px grey;
+}
+/*
+* HL = Hyperlink 
+* HT = Hypertext
+*/
+
+body.main img.hli {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    body.main img.hli {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body.main div.links {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    body.main img.hli {
+        width: 60%;
+    }
+}
+
+body.main h2.htt {
+    padding: 16px;
+    color: black;
+    line-height: 0.75;
+}
+
+body.main span.htd {
+    color: grey;
+    font-size: x-small;
+}
+
+body.main a.social {
+    margin: 20px;
+}
