@@ -262,6 +262,12 @@ body.main div.bio {
     text-align: left;
 }
 
+@media screen and (max-width: 425px) {
+    body.main div.bio {
+        text-align: center;
+    }
+}
+
 body.main div.bio h1 {
     font-size: xx-large;
 }
@@ -348,7 +354,7 @@ body.main div.contact {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 8%;
+    margin: 5%;
 }
 
 body.main div.links {
