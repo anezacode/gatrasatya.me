@@ -1,0 +1,9 @@
+# .gitattributes
+/images/ export-ignore
+/pages/ export-ignore
+index.html export-ignore
+main.html export-ignore
+404.html export-ignore
+style.css export-ignore
+script.js export-ignore
+keydown.js export-ignore
