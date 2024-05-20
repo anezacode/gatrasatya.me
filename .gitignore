@@ -1,3 +1,13 @@
+# .gitignore
+/images/
+/pages/
+index.html
+main.html
+404.html
+style.css
+script.js
+keydown.js
+
 pom.xml
 pom.xml.asc
 *.jar
