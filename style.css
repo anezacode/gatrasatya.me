@@ -261,6 +261,7 @@ body.main div.bio {
     margin: 50px;
     margin-top: 35px;
     line-height: 1.5;
+    text-align: left;
 }
 
 body.main div.bio h1 {
