@@ -227,8 +227,8 @@ body.main div.banner > div.content {
     body.main div.banner > div.content {
         padding-top: 14vh;
         display: block;
-        margin-left: 6vw;
-        margin-right: 6vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 }
 
@@ -318,8 +318,7 @@ body.main button.cvbtn:active {
 
 @media screen and (max-width: 768px) {
     body.main img.pfp {
-        margin-left: 0;
-        width: 36vw;
+        width: 46vw;
         border-radius: 21px;
     }
 
@@ -356,7 +355,7 @@ body.main button.cvbtn:active {
         border-radius: 25px;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     body.main button.vbtn {
         width: 100%;
     }
@@ -401,8 +400,13 @@ body.main img.hli {
 }
 
 @media screen and (max-width: 768px) {
+    body.main div.links {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
     body.main img.hli {
-        width: 160px;
+        width: 220px;
     }
 }
 
