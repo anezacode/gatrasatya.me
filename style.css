@@ -355,7 +355,8 @@ body.main button.cvbtn:active {
         width: 56vw;
         border-radius: 25px;
     }
-
+}
+@media screen and (max-width: 425px) {
     body.main button.vbtn {
         width: 100%;
     }
