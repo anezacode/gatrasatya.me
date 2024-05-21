@@ -229,8 +229,6 @@ body.main div.banner > div.content {
         display: block;
         margin-left: 6vw;
         margin-right: 6vw;
-        text-align: center;
-        align-items: center;
     }
 }
 
@@ -309,6 +307,8 @@ body.main button.cvbtn {
 
     body.main div.bio {
         line-height: 1.25;
+        text-align: center;
+        align-items: center;
     }
 
     body.main div.bio h1 {
@@ -322,7 +322,7 @@ body.main button.cvbtn {
     }
 
     body.main div.dbtn {
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
 }
 
