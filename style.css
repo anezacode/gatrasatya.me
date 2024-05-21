@@ -298,10 +298,28 @@ body.main button.cvbtn {
     font-weight: bold;
 }
 
+body.main button.vbtn:hover {
+    background-color: rgb(200,200,200);
+}
+
+body.main button.vbtn:active {
+    background-color: rgb(20,20,20);
+    color: white
+}
+
+body.main button.cvbtn:hover {
+    background-color: rgb(80,80,80);
+}
+
+body.main button.cvbtn:active {
+    background-color: rgb(20,20,20);
+    color: white
+}
+
 @media screen and (max-width: 768px) {
     body.main img.pfp {
         margin-left: 0;
-        width: 32vw;
+        width: 36vw;
         border-radius: 21px;
     }
 
@@ -334,7 +352,7 @@ body.main button.cvbtn {
 
 @media screen and (max-width: 320px) {
     body.main img.pfp {
-        width: 50vw;
+        width: 56vw;
         border-radius: 25px;
     }
 
@@ -354,7 +372,7 @@ body.main div.contact {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 3%;
 }
 
 body.main div.links {
@@ -376,8 +394,9 @@ body.main div.links:active {
 */
 
 body.main img.hli {
-    width: 200px;
+    width: 180px;
     height: auto;
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
