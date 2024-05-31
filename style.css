@@ -298,15 +298,32 @@ body.main div.progress {
     }
 
     body.main div.progress {
-        margin-left: 20vh;
-        margin-right: 20vh;
+        margin-left: 25vh;
+        margin-right: 25vh;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
     body.main div.skill {
-        top: 200px;
+        top: 50%;
         left: 50%;
+        transform: translate(-63%, -5%);
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    body.main div.skill {
+        top: 50%;
+        left: 50%;
+        transform: translate(-54%, -5%);
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 425px) {
+    body.main div.skill {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -5%);
     }
 }
 
