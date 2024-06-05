@@ -1,4 +1,7 @@
-JAWABAN ESSAY SASBK MAPEL DPPLG
+/*
+* JAWABAN ESSAY SASBK MAPEL DPPLG
+* ANGGATRA SATYA P.N. XPPLG1
+*/
 
 bil2 = Double.parseDouble(jTextField1.getText());
 double hasil = 0;
