@@ -1,12 +1,1 @@
-# .gitattributes
-images/ export-ignore
-pages/ export-ignore
-fonts/ export
-index.html export-ignore
-main.html export-ignore
-404.html export-ignore
-style.css export-ignore
-access.js export-ignore
-delivery.js export-ignore
-keydown.js export-ignore
-favicon.ico export-ignore
+
