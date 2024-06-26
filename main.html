@@ -28,15 +28,15 @@
     <div class="skill">
        <div class="progress">
             <img class="icon" src="images/html-logo.webp" /><br />
-            <progress class="statsbar" value="78" max="100"></progress>
+            <progress class="statsbar" value="72" max="100"></progress>
        </div>
        <div class="progress">
             <img class="icon" src="images/css-logo.webp" /><br />
-            <progress class="statsbar" value="54" max="100"></progress>
+            <progress class="statsbar" value="48" max="100"></progress>
         </div>
         <div class="progress">
             <img class="icon" src="images/js-logo.webp" /><br />
-            <progress class="statsbar" value="12" max="100"></progress>
+            <progress class="statsbar" value="24" max="100"></progress>
         </div>
     </div>
     <div class="project-blog">
@@ -76,7 +76,7 @@
     </div>
     <div class="contact">
         <h2 class="subtitle">Send Me Email</h2>
-        <form action="#">
+        <form action="#" onsubmit="sendEmail()">
             <div class="input-box">
                 <div class="field">
                     <input type="text" maxlength="32" placeholder="Full Name" class="item" id="name" autocomplete="off" /><br />
@@ -87,7 +87,7 @@
                     <textarea maxlength="256" placeholder="Write Message" class="mess" id="message" rows="10"></textarea>
                 </div>
             </div>
-            <button onclick="sendEmail()" class="submission" type="submit">Send</button>
+            <input type="submit" class="submission" value="Submit">
         </form>
     </div>
 </body>
