@@ -395,7 +395,7 @@ body.main textarea.mess {
     font-family: Poppins-Regular;
 }
 
-input[type=submit].submission {
+button[type=submit].submission {
     padding: 10px;
     width: 50vh;
     margin: 1px;
