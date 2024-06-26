@@ -8,13 +8,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body onload="indexOpened()" class="index" align="center">
-    <form class="form">
+    <form class="form" onsubmit="return submitPassword()">
         <h1 class="logo">gatrasatya</h1>
         <input type="password" class="safety" id="safety" placeholder="Password" maxlength="21" disabled />
-        <input type="submit" class="access" id="access" onclick="submitPassword()" value="OK" disabled />
+        <input type="submit" class="access" id="access" value="OK" disabled />
         <noscript>
-            <p class="no-js">Please ensure JavaScript is enable!<br/>Page will automatically refresh in 5s.</p>
-            <meta http-equiv="refresh" content="5">
+            <p class="no-js">Please ensure JavaScript is enable!<br/>Page will automatically refresh every 5s.</p>
+            <meta http-equiv="refresh" content="5" />
         </noscript>
     </form>
 </body>
