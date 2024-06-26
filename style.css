@@ -337,8 +337,8 @@ body.main h2.subtitle {
 body.main div.inbox {
     justify-content: center;
     margin: 10px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 body.main div.sub-content {
@@ -372,6 +372,8 @@ body.main  img.preview {
 
 body.main div.contact {
     text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 body.main input.item {
