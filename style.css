@@ -347,8 +347,22 @@ body.main h2.subtitle {
 body.main div.inbox {
     justify-content: center;
     margin: 10px;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+}
+
+@media screen and (max-width: 1440px) {
+    body.main div.inbox {
+        margin-left: 20vh;
+        margin-right: 20vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body.main div.inbox {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
 }
 
 body.main div.sub-content {
@@ -372,12 +386,13 @@ body.main span.blog-label {
     padding: 5px;   
 }
 
-body.main div.box-img {
-    width: 100px;
-}
-
 body.main  img.preview {
     width: 100px;
+    margin-left: 10px;
+}
+
+body.main span.date {
+    opacity: 0.8;
 }
 
 body.main div.contact {
@@ -386,7 +401,7 @@ body.main div.contact {
 
 body.main input.item {
     border: 1px solid grey;
-    width: 50vh;
+    width: 25%;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
@@ -397,15 +412,15 @@ body.main textarea.mess {
     font-family: sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 50vh;
+    width: 25%;
     resize: none;
     border-radius: 5px;
     font-family: Poppins-Regular;
 }
 
-button[type=submit].submission {
+body.main button[type=submit].submission {
     padding: 10px;
-    width: 50vh;
+    width: 25%;
     margin: 1px;
     border: 1px solid rgb(20,20,20);
     border-radius: 20px;
@@ -416,3 +431,22 @@ button[type=submit].submission {
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1440px) {
+    body.main input.item, body.main textarea.mess, body.main button[type=submit].submission {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body.main input.item, body.main textarea.mess, body.main button[type=submit].submission {
+        width: 70%;
+    }
+}
+
+body.main h6.tribute {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20%;
+}
