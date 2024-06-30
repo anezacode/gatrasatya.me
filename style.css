@@ -265,6 +265,16 @@ body.main button.cv-btn {
     font-family: Poppins-Hitam;
 }
 
+@media screen and (max-width: 768px) {
+    body.main button.pf-btn {
+        width: 100%;        
+    }
+
+    body.main button.cv-btn {
+        width: 100%;        
+    }
+}
+
 body.main div.skill {
     position: relative;
     z-index: 4;
@@ -294,19 +304,19 @@ body.main div.progress {
     body.main div.skill {
         flex-wrap: wrap;
         flex-direction: column;
-        top: 180px;
+        top: 160px;
     }
 
     body.main div.progress {
-        margin-left: 30vh;
-        margin-right: 30vh;
+        margin-left: 20vh;
+        margin-right: 20vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     body.main div.progress {
-        margin-left: 15vw;
-        margin-right: 15vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
 
@@ -337,8 +347,8 @@ body.main h2.subtitle {
 body.main div.inbox {
     justify-content: center;
     margin: 10px;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 body.main div.sub-content {
@@ -372,8 +382,6 @@ body.main  img.preview {
 
 body.main div.contact {
     text-align: center;
-    margin-left: 10vh;
-    margin-right: 10vh;
 }
 
 body.main input.item {
