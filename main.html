@@ -9,13 +9,15 @@
 </head>
 <body class="main">
     <nav class="navbar">
-        <h1 class="logo">gatrasatya</h1>
+        <a href="main.html">
+            <h1 class="logo">gatrasatya</h1>
+        </a>
         <span class="version">BETA</span>
     </nav>
     <div id="banner" class="banner">
         <div class="overlay"></div>
         <div class="content">
-            <a href="javascript:location.reload()">
+            <a href="portfolio.html">
                 <img class="pfp" id="pfp" src="images/logo.webp"/>
             </a>
             <div>
@@ -28,15 +30,12 @@
     <div class="skill">
        <div class="progress">
             <img class="icon" src="images/html-logo.webp" /><br />
-            <progress class="statsbar" value="72" max="100"></progress>
        </div>
        <div class="progress">
             <img class="icon" src="images/css-logo.webp" /><br />
-            <progress class="statsbar" value="48" max="100"></progress>
         </div>
         <div class="progress">
             <img class="icon" src="images/js-logo.webp" /><br />
-            <progress class="statsbar" value="24" max="100"></progress>
         </div>
     </div>
     <div class="project-blog">
@@ -96,7 +95,7 @@
     </div>
     <div class="contact">
         <h2 class="subtitle">Send Me Email</h2>
-        <form action="#">
+        <form id="emailForm" action="#">
             <div class="input-box">
                 <div class="field">
                     <input type="text" maxlength="32" placeholder="Full Name" class="item" id="name" autocomplete="off" /><br />
@@ -109,6 +108,10 @@
             </div>
             <button onclick="sendEmail()" class="submission" type="submit">Send</button>
         </form>
+        <div class="catch" id="catch">
+            <h3>Thank You!</h3>
+            <p>Email will be sent immediately.</p>
+        </div>
     </div>
     <footer>
         <h6 class="tribute">Ⓒ 2024 AnezaCode</h6>
