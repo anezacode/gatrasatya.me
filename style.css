@@ -431,6 +431,10 @@ body.main button[type=submit].submission {
     letter-spacing: 1px;
 }
 
+body.main div.catch p {
+    font-size: small;
+}
+
 @media screen and (max-width: 1440px) {
     body.main input.item, body.main textarea.mess, body.main button[type=submit].submission {
         width: 50%;
