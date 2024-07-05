@@ -27,8 +27,8 @@
             </div>
         </div>
     </div>
-    <div class="skill">
-       <div class="progress">
+        <div class="skill">
+            <div class="progress">
             <img class="icon" src="images/html-logo.webp" /><br />
        </div>
        <div class="progress">
@@ -67,48 +67,26 @@
                         <br /><span class="date">02/2/2024</span>
                     </p>
                 </div>
-                <!--
-                <div class="box-img">
-                    <img class="preview" src="images/logo.webp" />
-                </div>
-                -->
             </div>
         </div>
-        <!--
-        <div class="inbox">
-            <span class="blog-label">Blog</span>
-            <div class="sub-content">
-                <div class="box-text">
-                    <a href="http://xpplg1-smkpp.blogspot.com">
-                        <h3>GatraSatya, kadiv web baru Orens Solution.</h3>
-                    </a>
-                    <p>GatraSatya telah diresmikan menjadi kepala divisi web di Orens Solution.
-                        <br />02/1/2024
-                    </p>
-                </div>
-                <div class="box-img">
-                    <img class="preview" src="images/logo.webp" />
-                </div>
-            </div>
-        </div>
-        -->
     </div>
     <div class="contact">
         <h2 class="subtitle">Send Me Email</h2>
         <form id="emailForm" action="#">
             <div class="input-box">
                 <div class="field">
-                    <input type="text" maxlength="32" placeholder="Full Name" class="item" id="name" autocomplete="off" /><br />
-                    <input type="email" maxlength="64" placeholder="Email Address" class="item" id="email" autocomplete="off" /><br />
-                    <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" /><br />
+                    <input type="text" maxlength="32" placeholder="Full Name" class="item" id="name" autocomplete="off" required /><br />
+                    <input type="email" maxl/ength="64" placeholder="Email Address" class="item" id="email" autocomplete="off" required /><br />
+                    <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
                 </div>
                 <div class="field">
-                    <textarea maxlength="256" placeholder="Write Message" class="mess" id="message" rows="10"></textarea>
+                    <textarea maxlength="256" placeholder="Write Message" class="mess" id="message" rows="10"></textarea><br />
+                    <span id="warns"></span>
                 </div>
             </div>
             <button onclick="sendEmail()" class="submission" type="submit">Send</button>
         </form>
-        <div class="catch" id="catch" style="display: none;">
+        <div class="catch" id="catch">
             <h3>Thank You!</h3>
             <p>Email will be sent immediately.</p>
         </div>
