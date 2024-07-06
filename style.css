@@ -325,7 +325,7 @@ body.main div.progress:hover {
 }
 
 body.main div.progress:active {
-    box-shadow: 0px 0px 1px 0.5px grey;
+    box-shadow: 0px 0px 2px 1px grey;
 }
 
 body.main img.icon {
@@ -395,7 +395,8 @@ body.main span.date {
     opacity: 0.8;
 }
 
-body.main div.contact {
+body.main form#emailForm {
+    display: block;
     text-align: center;
 }
 
@@ -429,6 +430,15 @@ body.main button[type=submit].submission {
     font-family: Poppins-Regular;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+body.main span#warns {
+    color: rgb(155,0,0);
+    display: none;
+}
+
+body.main div.catch {
+    display: none;
 }
 
 body.main div.catch p {
