@@ -9,7 +9,7 @@
 </head>
 <body class="main">
     <nav class="navbar">
-        <a href="main.html">
+        <a class="un" href="main.html">
             <h1 class="logo">gatrasatya</h1>
         </a>
         <span class="version">BETA</span>
@@ -17,13 +17,18 @@
     <div id="banner" class="banner">
         <div class="overlay"></div>
         <div class="content">
-            <a href="pages/portfolio.html">
+            <a href="pages/about-me.html">
                 <img alt="~GatraSatya" class="pfp" id="pfp" src="images/logo.webp"/>
             </a>
             <div>
                 <h1 class="title">Frontend Web Developer</h1>
                 <p class="description">Halo, perkenalkan saya Anggatra Satya. Saya lulusan SMK Prestasi Prima jurusan RPL/PPLG. Saya telah menguasai HTML, CSS, JS, dan bahasa pemrograman web lainnya.</p>
-                <button class="pf-btn">My Portfolio</button><button class="cv-btn">Download CV</button>
+                <a href="pages/about-me.html">
+                    <button class="pf-btn">About Me</button>
+                </a>
+                <a href="pages/portfolio.html">
+                    <button class="cv-btn">Download CV</button>
+                </a>
             </div>
         </div>
     </div>
@@ -38,10 +43,10 @@
             <img class="icon" src="images/js-logo.webp" /><br />
         </div>
     </div>
-    <div class="project-blog">
-        <h2 class="subtitle">Blogs & Project</h2>
+    <div class="project-side">
+        <h2 class="subtitle">My Projects</h2>
         <div class="inbox">
-            <span class="project-label">Project</span>
+            <span class="project1-label">Finished</span>
             <div class="sub-content">
                 <div class="box-text">
                     <a target="_blank" href="https://s.id/khodamchecker">
@@ -52,12 +57,12 @@
                     </p>
                 </div>
                 <div class="box-img">
-                    <img class="preview" src="images/logo.webp" />
+                    <img class="preview" src="images/cekodam.webp" />
                 </div>
             </div>
         </div>
         <div class="inbox">
-            <span class="project-label">Project</span>
+            <span class="project1-label">Finished</span>
             <div class="sub-content">
                 <div class="box-text">
                     <a target="_blank" href="http://xpplg1-smkpp.blogspot.com">
@@ -67,16 +72,51 @@
                         <br /><span class="date">02/2/2024</span>
                     </p>
                 </div>
+                <div class="box-img">
+                    <img class="preview" src="images/xpplg1.webp" />
+                </div>
+            </div>
+        </div>
+        <div class="inbox">
+            <span class="project2-label">Ongoing</span>
+            <div class="sub-content">
+                <div class="box-text">
+                    <a target="_blank" href="">
+                        <h3>Sumber Doksli [ALPHA]</h3>
+                    </a>
+                    <p>Web untuk Semua Dokumen Asli berbagai Memes.
+                        <br /><span class="date">24/7/2024</span>
+                    </p>
+                </div>
+                <div class="box-img">
+                    <img class="preview" src="" />
+                </div>
+            </div>
+        </div>
+        <div class="inbox">
+            <span class="project2-label">Ongoing</span>
+            <div class="sub-content">
+                <div class="box-text">
+                    <a target="_blank" href="">
+                        <h3>XI PPLG 1 - SMKPP [ALPHA]</h3>
+                    </a>
+                    <p>Web Kelas XI PPLG 1 Angkatan 12 SMK Prestasi Prima.
+                        <br /><span class="date">16/7/2024</span>
+                    </p>
+                </div>
+                <div class="box-img">
+                    <img class="preview" src="" />
+                </div>
             </div>
         </div>
     </div>
     <div class="contact">
-        <h2 class="subtitle">Send Me Email</h2>
+        <h2 class="subtitle">Send Email</h2>
         <form id="emailForm" action="#">
             <div class="input-box">
                 <div class="field">
                     <input type="text" maxlength="32" placeholder="Full Name" class="item" id="name" autocomplete="off" required /><br />
-                    <input type="email" maxl/ength="64" placeholder="Email Address" class="item" id="email" autocomplete="off" required /><br />
+                    <input type="email" maxlength="64" placeholder="Email Address" class="item" id="email" autocomplete="off" required /><br />
                     <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
                 </div>
                 <div class="field">
@@ -84,7 +124,8 @@
                     <span id="warns"></span>
                 </div>
             </div>
-            <button onclick="sendEmail()" class="submission" type="submit">Send</button>
+            <button onclick="sendEmail()" class="submission" type="submit">Send</button><br>
+            <span class="note">NOTE: This service uses free SMTP,<br>it is possible that some will not be sent.</span>
         </form>
         <div class="catch" id="catch">
             <h3>Thank You!</h3>
