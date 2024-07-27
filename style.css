@@ -31,7 +31,7 @@ a {
     color: black;
 }
 
-body.main div.project-blog a:hover {
+body.main div.project-side a:hover {
     text-decoration: underline;
 }
 
@@ -443,10 +443,10 @@ body.main textarea.mess {
 
 body.main button[type=submit].submission {
     padding: 10px;
-    width: 420px;
+    width: 440px;
     margin-bottom: 10px;
     border: 1px solid rgb(20,20,20);
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: rgb(20,20,20);
     color: white;
     font-family: Poppins-Regular;
