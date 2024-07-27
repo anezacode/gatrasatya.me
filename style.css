@@ -31,7 +31,7 @@ a {
     color: black;
 }
 
-a:hover {
+body.main div.project-blog a:hover {
     text-decoration: underline;
 }
 
@@ -57,13 +57,16 @@ a, button {
 
 body.index {
     background-color: black;
-    margin: 5vh 10vw 5vh 10vw;
     color: white;
+    text-align: center;
 }
 
 body.index form.form {
-    margin-top: 40vh;
     user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1.logo {
@@ -76,6 +79,10 @@ h1.logo {
     user-select: none;
     cursor: pointer;
     animation: glow 2s ease-in-out infinite;
+}
+
+h1.logo:hover {
+    text-decoration: none;
 }
 
 @keyframes glow {
@@ -142,18 +149,26 @@ body.index p.no-js {
     margin-top: 20px;
     color: gray;
     font-size: smaller;
-    font-family: monospace;
+    font-family: Poppins-Regular;
 }
 
 body.notfound {
     background-color: black;
-    margin: 5vh 10vw 5vh 10vw;
     color: white;
+    text-align: center;
 }
 
-body.notfound h1.logo {
-    text-align: center;
-    margin-top: 36vh;
+body.notfound div.getback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.notfound p.tip {
+    font-family: Poppins-Regular;
+    font-size: smaller;
+    color: gray;
 }
 
 body.main {
@@ -215,6 +230,10 @@ body.main img.pfp {
     height: auto;
 }
 
+body.main img.pfp:hover {
+    filter: brightness(86%);
+}
+
 @media screen and (max-width: 1080px) {
     body.main div.content {
         flex-wrap: wrap;
@@ -249,7 +268,7 @@ body.main button.pf-btn {
     gap: 10px;
     margin-right: 2px;
     margin-top: 10px;
-    border: 1px solid white;
+    border: 1px solid gray;
     font-family: Poppins-Hitam;
 
 }
@@ -264,6 +283,14 @@ body.main button.cv-btn {
     background-color: grey;
     color: white;
     font-family: Poppins-Hitam;
+}
+
+body.main button.pf-btn:hover {
+    background-color: lightgray;
+}
+
+body.main button.cv-btn:hover {
+    background-color: darkgrey;
 }
 
 @media screen and (max-width: 768px) {
@@ -329,7 +356,7 @@ body.main img.icon {
     height: 100%;
 }
 
-body.main div.project-blog {
+body.main div.project-side {
     margin-bottom: 50px;
 }
 
@@ -341,8 +368,16 @@ body.main h2.subtitle {
 body.main div.inbox {
     justify-content: center;
     margin: 10px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    body.main div.inbox {
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
 }
 
 body.main div.sub-content {
@@ -350,7 +385,20 @@ body.main div.sub-content {
     justify-content: space-between;
 }
 
-body.main span.project-label {
+body.main div.box-text {
+    margin-bottom: 12px;
+}
+
+body.main span.project1-label {
+    font-family: monospace;
+    text-transform: uppercase;
+    color: white;
+    background-color: dodgerblue;
+    
+    padding: 5px;   
+}
+
+body.main span.project2-label {
     font-family: monospace;
     text-transform: uppercase;
     color: white;
@@ -358,17 +406,11 @@ body.main span.project-label {
     padding: 5px;   
 }
 
-body.main span.blog-label {
-    font-family: monospace;
-    text-transform: uppercase;
-    color: white;
-    background-color: steelblue;
-    padding: 5px;   
-}
-
-body.main  img.preview {
-    width: 100px;
+body.main img.preview {
+    width: 80px;
+    height: auto;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 body.main span.date {
@@ -382,7 +424,7 @@ body.main form#emailForm {
 
 body.main input.item {
     border: 1px solid grey;
-    width: 450px;
+    width: 440px;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
@@ -393,7 +435,7 @@ body.main textarea.mess {
     font-family: sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 450px;
+    width: 440px;
     resize: none;
     border-radius: 5px;
     font-family: Poppins-Regular;
@@ -401,10 +443,10 @@ body.main textarea.mess {
 
 body.main button[type=submit].submission {
     padding: 10px;
-    width: 450px;
-    margin: 1px;
+    width: 420px;
+    margin-bottom: 10px;
     border: 1px solid rgb(20,20,20);
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgb(20,20,20);
     color: white;
     font-family: Poppins-Regular;
@@ -412,9 +454,17 @@ body.main button[type=submit].submission {
     letter-spacing: 1px;
 }
 
+body.main button[type=submit].submission:hover {
+    background-color: darkslategray;
+}
+
 body.main span#warns {
     color: rgb(155,0,0);
     display: none;
+}
+
+body.main span.note {
+    font-size: smaller;
 }
 
 body.main div.catch {
