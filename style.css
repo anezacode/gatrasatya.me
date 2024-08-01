@@ -37,6 +37,7 @@ body.main div.project-side a:hover {
 
 a, button {
     cursor: pointer;
+    user-select: none;
 }
 
 @font-face {
@@ -110,7 +111,8 @@ h1.logo:hover {
 body.index input.safety {
     background-color: rgb(20,20,20);
     color: gray;
-    padding: 7px 17px 7px 17px;
+    padding: 7px;
+    width: 177px;
     border-radius: 20px;
     border: 1px solid grey;
     text-decoration: none;
