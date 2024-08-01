@@ -2,18 +2,18 @@
     margin: 0;
     padding: 0;
     transition: 0.25s;
-    zoom: 0.96;
+    zoom: 0.98;
 }
 
 @media screen and (max-width: 920px) {
     *, html {
-        zoom: 0.96;
+        zoom: 0.98;
     }
 }
 
 @media screen and (max-width: 435px) {
      *, html {
-        zoom: 0.92;
+        zoom: 0.94;
      }
 }
 
@@ -223,8 +223,7 @@ body.main div.content {
 }
 
 body.main img.pfp {
-    width: 240px;
-    margin-top: 2%;
+    width: 220px;
     height: auto;
 }
 
@@ -244,7 +243,7 @@ body.main img.pfp:hover {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     body.main div.content {
         flex-wrap: wrap;
         top: 45vh;
@@ -275,7 +274,6 @@ body.main button.pf-btn {
     padding: 10px;
     border-radius: 20px;
     gap: 10px;
-    margin-right: 2px;
     margin-top: 10px;
     border: 1px solid gray;
     font-family: Poppins-Hitam;
@@ -286,7 +284,6 @@ body.main button.cv-btn {
     letter-spacing: 0.5px;
     padding: 10px;
     border-radius: 20px;
-    margin-left: 2px;
     margin-top: 10px;
     border: 1px solid grey;
     background-color: grey;
@@ -422,7 +419,7 @@ body.main span.project2-label {
 }
 
 body.main img.preview {
-    width: 80px;
+    width: 85px;
     height: auto;
     margin-left: 10px;
     border-radius: 10px;
