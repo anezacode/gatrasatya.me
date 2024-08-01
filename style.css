@@ -1,7 +1,6 @@
 *, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     transition: 0.25s;
     zoom: 0.96;
 }
@@ -152,6 +151,7 @@ body.notfound {
     background-color: black;
     color: white;
     text-align: center;
+    box-sizing: border-box;
 }
 
 body.notfound div.getback {
@@ -170,6 +170,7 @@ body.notfound p.tip {
 body.main {
     color: black;
     font-family: Poppins-Regular;
+    box-sizing: border-box;
 }
 
 body.main nav.navbar {
