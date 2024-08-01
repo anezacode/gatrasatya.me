@@ -3,17 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.25s;
+    zoom: 0.96;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     *, html {
         zoom: 0.96;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 435px) {
+@media screen and (max-width: 435px) {
      *, html {
-        zoom: 0.93;
+        zoom: 0.92;
      }
 }
 
@@ -60,13 +61,6 @@ body.index {
     background-color: black;
     color: white;
     text-align: center;
-    zoom: 1;
-}
-
-@media screen and (max-width: 435px) {
-    body.index, body.main {
-        zoom: 0.96;
-    }
 }
 
 body.index form.form {
