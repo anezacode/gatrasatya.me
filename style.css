@@ -142,6 +142,9 @@ body.index input[type=submit].access:active {
 }
 
 @media screen and (max-width: 920px) {
+    body.index input.safety {
+        width: 75%;
+    }
     body.index input[type=submit].access {
         margin: 5px;
         width: 75%;
