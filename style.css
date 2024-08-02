@@ -3,6 +3,7 @@
     padding: 0;
     transition: 0.25s;
     zoom: 0.98;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 920px) {
@@ -24,6 +25,10 @@
 
 br, input, img, button {
     user-select: none;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
 }
 
 a {
@@ -68,6 +73,7 @@ body.index form.form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    justify-content: center;
 }
 
 h1.logo {
@@ -80,7 +86,7 @@ h1.logo {
     user-select: none;
     cursor: pointer;
     animation: glow 2s ease-in-out infinite;
-    text-align: center;
+    width: 100%;
 }
 
 h1.logo:hover {
@@ -104,18 +110,13 @@ h1.logo:hover {
 body.index input.safety {
     background-color: rgb(20,20,20);
     color: gray;
-    padding: 7px;
-    width: 177px;
     border-radius: 20px;
     border: 1px solid grey;
     text-decoration: none;
     user-select: none;
+    padding: 7px;
     cursor: not-allowed;
     font-family: Poppins-Regular;
-}
-
-body.index input.safety:focus {
-    outline: none;
 }
 
 body.index input[type=submit].access {
@@ -123,8 +124,8 @@ body.index input[type=submit].access {
     color: black;
     font-weight: bold;
     border: 1px solid grey;
+    padding: 7px 14px 7px 14px;
     border-radius: 20px;
-    padding: 7px 17px 7px 17px;
     cursor: pointer;
     user-select: none;
     cursor: not-allowed;
@@ -140,6 +141,13 @@ body.index input[type=submit].access:active {
     color: grey;
 }
 
+@media screen and (max-width: 920px) {
+    body.index input[type=submit].access {
+        margin: 5px;
+        width: 75%;
+    }
+}
+
 body.index p.no-js {
     margin-top: 20px;
     color: gray;
@@ -151,7 +159,6 @@ body.notfound {
     background-color: black;
     color: white;
     text-align: center;
-    box-sizing: border-box;
 }
 
 body.notfound div.getback {
@@ -170,7 +177,6 @@ body.notfound p.tip {
 body.main {
     color: black;
     font-family: Poppins-Regular;
-    box-sizing: border-box;
 }
 
 body.main nav.navbar {
@@ -454,10 +460,10 @@ body.main textarea.mess {
 }
 
 body.main button[type=submit].submission {
-    padding: 10px 190px 10px 190px;
+    padding: 10px 182px 10px 182px;
     margin-bottom: 10px;
     border: 1px solid rgb(20,20,20);
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgb(20,20,20);
     color: white;
     font-family: Poppins-Regular;
