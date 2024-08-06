@@ -182,7 +182,7 @@ body.main {
     font-family: Poppins-Regular;
 }
 
-body.main nav.navbar {
+nav.navbar {
     position: sticky;
     top: 0;
     z-index: 5;
@@ -194,8 +194,9 @@ body.main nav.navbar {
     justify-content: space-between;
 }
 
-body.main span.version {
+span.version {
     color: grey;
+    line-height: 1.8;
     padding: 5px;
 }
 
@@ -223,10 +224,11 @@ body.main div.overlay {
 body.main div.content {
     justify-content: center;
     position: absolute;
+    width: 50%;
     z-index: 3;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
     display: flex;
     gap: 50px;
 }
@@ -240,12 +242,19 @@ body.main img.pfp:hover {
     filter: brightness(86%);
 }
 
+@media screen and (max-width: 1440px) {
+    body.main div.content {
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media screen and (max-width: 1080px) {
     body.main div.content {
         flex-wrap: wrap;
         top: 40vh;
         gap: 20px;
-        width: 80%;
+        width: 75%;
+        
     }
     body.main img.pfp {
         width: 180px;
@@ -274,6 +283,7 @@ body.main h1 span.title {
 body.main p.description {
     line-height: 1.5;
     z-index: 5;
+    width: 75%;
     user-select: text;
     margin-bottom: 5px;
 }
@@ -308,9 +318,9 @@ body.main button.cv-btn:hover {
     background-color: darkgrey;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     body.main p.description {
-        width: 80vw;
+        width: 90%;
     }
 }
 
@@ -327,6 +337,7 @@ body.main button.cv-btn:hover {
 body.main div.skill {
     position: relative;
     z-index: 4;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -30%);
@@ -354,11 +365,6 @@ body.main div.progress {
         flex-wrap: wrap;
         flex-direction: column;
         top: 160px;
-    }
-
-    body.main div.progress {
-        margin-left: 20vw;
-        margin-right: 20vw;
     }
 }
 
@@ -389,16 +395,11 @@ body.main h2.subtitle {
 body.main div.inbox {
     justify-content: center;
     margin: 10px;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 15px;
-}
-
-@media screen and (max-width: 920px) {
-    body.main div.inbox {
-        margin-left: 11vw;
-        margin-right: 11vw;
-    }
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
 }
 
 body.main div.sub-content {
@@ -407,7 +408,7 @@ body.main div.sub-content {
 }
 
 body.main div.box-text {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 body.main span.project1-label {
@@ -415,7 +416,6 @@ body.main span.project1-label {
     text-transform: uppercase;
     color: white;
     background-color: dodgerblue;
-    
     padding: 5px;   
 }
 
@@ -520,10 +520,72 @@ body.main div.linked img {
     margin: -2px 0px 0px 10px;
 }
 
-body.main h6.tribute {
+body.about {
+    font-family: Poppins-Regular;
+}
+  
+body.about h2{
+    color: black;
+    text-align: center;
+    font-family: Poppins-Hitam;
+    margin: 20px;
+}
+
+body.about div.content {
+margin: 10px;
+}
+
+body.about div.intro p {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+  
+body.about details {
+    font-weight: bold;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+
+body.about summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: 0.2s linear;
+    border-bottom: 1px solid rgb(20,20,20);
+}
+  
+body.about summary::-webkit-details-marker {
+    display: none;
+}
+  
+body.about summary:after {
+    content: "\002B";
+}
+  
+body.about details[open] summary {
+    margin-bottom: 10px;
+}
+  
+body.about details[open] summary:after {
+    content: "\00D7";
+  }
+  
+body.about details[open] div{
+    font-weight: 100;
+  }
+
+h6.tribute {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
