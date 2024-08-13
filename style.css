@@ -392,14 +392,23 @@ body.main h2.subtitle {
     font-family: Poppins-Hitam;
 }
 
-body.main div.inbox {
-    justify-content: center;
-    margin: 10px;
-    width: 80%;
+body.main div.project-side {
+    width: 90vh;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -0%);
+}
+
+@media screen and (max-width: 768px) {
+    body.main div.project-side {
+        width: 45vh;
+    }
+}
+
+body.main div.inbox {
+    justify-content: center;
+    margin: 10px;
 }
 
 body.main div.sub-content {
@@ -445,7 +454,7 @@ body.main form#emailForm {
 
 body.main input.item {
     border: 1px solid grey;
-    width: 420px;
+    width: 440px;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
@@ -456,14 +465,14 @@ body.main textarea.mess {
     font-family: sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 420px;
+    width: 440px;
     resize: none;
     border-radius: 5px;
     font-family: Poppins-Regular;
 }
 
 body.main button[type=submit].submission {
-    padding: 10px 182px 10px 182px;
+    padding: 10px 192px 10px 192px;
     margin-bottom: 10px;
     border: 1px solid rgb(20,20,20);
     border-radius: 5px;
@@ -501,6 +510,7 @@ body.main div.linked {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 body.main div.linked:hover {
@@ -524,7 +534,7 @@ body.about {
     font-family: Poppins-Regular;
 }
   
-body.about h2{
+body.about h2 {
     color: black;
     text-align: center;
     font-family: Poppins-Hitam;
@@ -532,55 +542,83 @@ body.about h2{
 }
 
 body.about div.content {
-margin: 10px;
+    margin: 10px;
 }
 
 body.about div.intro p {
     text-align: center;
     justify-content: center;
-    width: 80%;
+    width: 90vh;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
-  
-body.about details {
-    font-weight: bold;
-    width: 500px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-  }
 
-body.about summary {
-    list-style: none;
+@media screen and (max-width: 768px) {
+    body.about div.intro p {
+        width: 45vh;
+    }
+}
+  
+.container{ 
+    width: 90vh;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.accordion__wrapper {
+    border-radius: 2.5rem;
+    width: 100%;
+    max-width: 60rem;
+    padding: 1rem;
+}
+
+.accordion__title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.accordion {
+    border-bottom: 0.1rem solid gray;
+}
+
+.accordion__header {
     display: flex;
-    justify-content: space-between;  
-    transition: 0.2s linear;
-    border-bottom: 1px solid rgb(20,20,20);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+} 
+
+.accordion__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-shrink: 0;
 }
-  
-body.about summary::-webkit-details-marker {
-    display: none;
-}
-  
-body.about summary:after {
+
+.accordion__icon::after {
     content: "\002B";
 }
-  
-body.about details[open] summary {
-    margin-bottom: 10px;
+
+.accordion__question{
+    font-size: medium;
 }
-  
-body.about details[open] summary:after {
-    content: "\00D7";
-  }
-  
-body.about details[open] div{
-    font-weight: 100;
-  }
+
+.accordion__answer{
+    padding: 2rem 0;
+}
+
+.accordion__content{
+    overflow: hidden;
+    height: 0;
+    transition: 0.2s;
+}
 
 h6.tribute {
     background-color: black;
