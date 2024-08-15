@@ -18,6 +18,12 @@
      }
 }
 
+@media screen and (max-width: 320px) {
+    *, html {
+        zoom: 0.9;
+    }
+}
+
 ::selection {
     background-color: rgb(80,80,80);
     color: white;
@@ -488,8 +494,9 @@ body.main button[type=submit].submission:hover {
 }
 
 body.main span#warns {
-    color: rgb(155,0,0);
+    color: rgb(255, 0, 0);
     display: none;
+    margin-bottom: 15px;
 }
 
 body.main span.note {
@@ -498,6 +505,7 @@ body.main span.note {
 
 body.main div.catch {
     display: none;
+    text-align: center;
 }
 
 body.main div.catch p {
