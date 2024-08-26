@@ -83,6 +83,10 @@ h1.logo {
     width: 100%;
 }
 
+body.main h1.logo {
+    font-size: large;
+}
+
 h1.logo:hover {
     text-decoration: none;
 }
