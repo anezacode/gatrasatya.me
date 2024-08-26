@@ -106,6 +106,7 @@ body.index input.safety {
     color: gray;
     border-radius: 20px;
     border: 1px solid grey;
+    width: 20vh;
     text-decoration: none;
     user-select: none;
     padding: 7px;
