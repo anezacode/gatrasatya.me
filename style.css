@@ -233,7 +233,6 @@ body.main div.content {
 
 @media screen and (max-width: 1080px) {
     body.main div.content {
-        top: 45%;
         width: 85%;
     }
 }
@@ -356,6 +355,14 @@ body.main img.icon {
     height: 100%;
 }
 
+body.main div.documentation {
+    width: 85vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 body.main div.project-side {
     margin-bottom: 50px;
 }
@@ -470,24 +477,23 @@ body.main span#warns {
 body.main span.note {
     font-size: smaller;
 }
-
+    
 body.main div.catch {
     display: none;
     text-align: center;
+    background-color: rgb(128,128,128, 0.1);
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
 }
 
 body.main div.catch p {
     font-size: small;
     opacity: 0.8;
-}
-
-body.main div.linked {
-    justify-content: center;
-    margin: 20px;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    
 }
 
 body.main div.linked:hover {
@@ -525,7 +531,7 @@ body.about div.content {
 body.about div.intro p {
     text-align: center;
     justify-content: center;
-    width: 90vh;
+    width: 85vh;
     position: relative;
     top: 50%;
     left: 50%;
@@ -534,67 +540,16 @@ body.about div.intro p {
 
 @media screen and (max-width: 768px) {
     body.about div.intro p {
-        width: 45vh;
+        width: 50vh;
     }
 }
-  
-.container{ 
-    width: 90vh;
-    margin: auto;
-    display: grid;
-    place-items: center;
-}
 
-.accordion__wrapper {
-    border-radius: 2.5rem;
-    width: 100%;
-    max-width: 60rem;
-    padding: 1rem;
-}
-
-.accordion__title{
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.accordion {
-    border-bottom: 0.1rem solid gray;
-}
-
-.accordion__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-} 
-
-.accordion__icon {
-    width: 2.2rem;
-    height: 2.2rem;
-    display: flex;
+div.linked {
     justify-content: center;
-    align-items: center;
-    color: black;
-    flex-shrink: 0;
-}
-
-.accordion__icon::after {
-    content: "\002B";
-}
-
-.accordion__question{
-    font-size: medium;
-}
-
-.accordion__answer{
-    padding: 2rem 0;
-}
-
-.accordion__content{
-    overflow: hidden;
-    height: 0;
-    transition: 0.2s;
+    margin: 20px;
+    margin-top: 100px;   
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h6.tribute {
@@ -602,5 +557,5 @@ h6.tribute {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
