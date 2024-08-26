@@ -73,7 +73,7 @@ body.index form.form {
 h1.logo {
     color: white;
     font-family: 'diff-mono';
-    font-size: large;
+    font-size: x-large;
     text-transform: lowercase;
     letter-spacing: 5px;
     padding: 10px;
