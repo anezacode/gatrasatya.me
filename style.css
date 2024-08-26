@@ -6,24 +6,11 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 920px) {
-    *, html {
-        zoom: 0.98;
-    }
-}
-
 @media screen and (max-width: 425px) {
      *, html {
-        zoom: 0.94;
-     }
-}
-
-@media screen and (max-width: 320px) {
-    *, html {
-        zoom: 0.89;
+        zoom: 0.88;
     }
 }
-
 ::selection {
     background-color: rgb(80,80,80);
     color: white;
