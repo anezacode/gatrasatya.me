@@ -108,7 +108,7 @@ h1.logo:hover {
 body.index input.safety {
     background-color: rgb(20,20,20);
     color: gray;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid grey;
     width: 200px;
     text-decoration: none;
@@ -124,7 +124,7 @@ body.index input[type=submit].access {
     font-weight: bold;
     border: 1px solid grey;
     padding: 7px 14px 7px 14px;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     user-select: none;
     cursor: not-allowed;
