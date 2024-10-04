@@ -8,12 +8,15 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="main">
+<body id="main" class="main">
+    <div id="preview-container" class="preview-container" onclick="closePreview()">
+        <img id="preview-image" class="preview-image" src="" alt="Preview">
+    </div>
     <nav class="navbar">
         <a class="un" href="main.html">
             <h1 class="logo">gatrasatya</h1>
         </a>
-        <span class="version">2.0</span>
+        <span class="version">BETA</span>
     </nav>
     <div class="banner">
         <div class="overlay"></div>
@@ -60,16 +63,17 @@
             </h2>
         </section>
         <div class="content-gallery">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-            <img class="img-gallery" draggable="false" src="assets/banner.webp">
-        </div>
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+            <img class="img-gallery" draggable="false" src="assets/banner.webp" onclick="openPreview(this.src)">
+        </div>            
+        </script>
     </div>
     <div class="project">
         <section class="subtitle">
@@ -172,6 +176,7 @@
         <h6 class="tribute">Ⓒ 2024 AnezaCode</h6>
     </footer>
 </body>
+<script type="text/javascript" src="preview.js"></script>
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript" src="delivery.js"></script>
 <script type="text/javascript" src="keydown.js"></script>
