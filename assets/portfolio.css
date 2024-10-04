@@ -1,0 +1,114 @@
+* {
+   font-family: "Montserrat", sans-serif; 
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: #eae4de;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    width: 200mm;
+    height: 190mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+img {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: 70%;
+    display: block;
+    margin: 0;
+}
+
+.container .card-one {
+    background-color: #E1B79E;;
+    width: 100%;
+    color: rgb(7, 7, 7) ;
+    font-size: large;
+}
+
+.container .card-two {
+    background-color: #F0DCC4;;
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: black;
+}
+
+.container .card-two .portofolio {
+    margin-top: 250px;
+    color: black;
+}
+
+.container-port {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.40fr 0.60fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container-port .port-one {
+    padding: 40px 20px;
+    padding-left: 35px;
+    background-color:  #0076a4;
+    width: 100%;
+    color: white;
+}
+
+.container-port .port-one .profile {
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.container-port .port-one .contact {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.container-port .port-one .contact>* {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.4fr 0.5fr;
+    margin-top: 25px;
+}
+
+.container .port-one .contact>* .text {
+    text-align: left;
+}
+
+.container-port .port-two {
+    background-color: #fdfdfd ;
+    padding: 40px 20px;
+    padding-right: 0px;
+    color: black;
+}
+
+.container-port .port-two h4 {
+    background-color: #e2f0fa;
+    margin: 0px;
+    padding:15px;
+    padding-left: 5px;
+    text-align:start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-port .port-two .pendidikan {
+    margin-top: 30px; 
+    margin-bottom: 20px;
+}
+.container-port .port-two .sertifikat {
+    margin-top: 30px; 
+    margin-bottom: 20px;
+}
