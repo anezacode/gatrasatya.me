@@ -1,6 +1,0 @@
-# .gitattributes
-style.css export-ignore
-access.js export-ignore
-delivery.js export-ignore
-keydown.js export-ignore
-favicon.ico export-ignore
