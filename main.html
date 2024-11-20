@@ -6,11 +6,11 @@
     <title>GatraSatya</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="main" class="main">
-    <div id="preview-container" class="preview-container" onclick="closePreview()">
+    <div id="preview-container" class="preview-container" >
         <img id="preview-image" class="preview-image" src="" alt="Preview">
+        <button class="close-btn" onclick="closePreview()">&Cross;</button>
     </div>
     <nav class="navbar">
         <a class="un" href="main.html">
@@ -23,8 +23,8 @@
         <div class="content">
             <p class="pre-title">An Ordinary Web Developer</p>
             <h1 class="title">GatraSatya</h1>    
-            <p class="description">Graduated from <a class="smk-href" href="https://smk.prestasiprima.sch.id">SMK Prestasi Prima</a></p>
-            <a href="">
+            <p class="description">Graduated from <a target="_blank" class="smk-href" href="https://smk.prestasiprima.sch.id">SMK Prestasi Prima</a></p>
+            <a href="about-me.html">
                 <button class="pf-btn">About Me</button>
             </a>
             <a href="portofolio.html">
@@ -40,13 +40,13 @@
         </div>
     </div>
     <div class="skill">
-        <a href="https://www.w3schools.com/html" class="progress">
+        <a href="https://www.w3schools.com/html" class="progress" target="_blank">
             <img class="icon-skill" draggable="false" src="assets/logo-html.webp" /><br />
         </a>
-        <a href="https://www.w3schools.com/css" class="progress">
+        <a href="https://www.w3schools.com/css" class="progress" target="_blank">
             <img class="icon-skill" draggable="false" src="assets/logo-css.webp" /><br />
         </a>  
-        <a href="https://www.w3schools.com/js" class="progress">
+        <a href="https://www.w3schools.com/js" class="progress" target="_blank">
             <img class="icon-skill" draggable="false" src="assets/logo-js.webp" /><br />
         </a>
     </div>
@@ -157,11 +157,11 @@
             <div class="input-box">
                 <div class="field">
                     <input type="text" maxlength="32" placeholder="Nickname" class="item" id="name" autocomplete="off" required /><br />
-                    <input type="email" maxlength="64" placeholder="Email Address" class="item" id="email" autocomplete="off" required /><br />
+                    <input type="email" maxlength="64" placeholder="Email" class="item" id="email" autocomplete="off" required /><br />
                     <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
                 </div>
                 <div class="field">
-                    <textarea maxlength="256" placeholder="Write Message" class="mess" id="message" rows="10"></textarea><br />
+                    <textarea maxlength="256" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
                     <span id="warns"></span>
                 </div>
             </div>

@@ -1,8 +1,11 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
 *, html {
     margin: 0;
     padding: 0;
     transition: 0.2s;
     box-sizing: border-box;
+    zoom: 1;
 }
 
 ::selection {
@@ -62,7 +65,7 @@ h1.logo {
     width: 100%;
 }
 
-body.main h1.logo {
+body.main h1.logo, body.about h1.logo {
     font-size: 1.2rem;
 }
 
@@ -95,7 +98,7 @@ body.index input.safety {
     user-select: none;
     padding: 7px;
     cursor: not-allowed;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
 }
 
 body.index input[type=submit].access {
@@ -107,7 +110,7 @@ body.index input[type=submit].access {
     border-radius: 20px;
     cursor: not-allowed;
     user-select: none;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     margin-top: 10px;
 }
 
@@ -125,14 +128,14 @@ body.index noscript {
     color: gray;
     font-size: smaller;
     position: relative;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     top: 550px;
 }
 
 body.notfound {
     background-color: black;
     color: white;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     text-align: center;
 }
 
@@ -149,9 +152,9 @@ body.notfound p.tip {
     color: gray;
 }
 
-body.main {
+body.main, body.about {
     color: black;
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
 }
 
 nav.navbar {
@@ -180,10 +183,21 @@ body.main div.banner {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 95vh;
 }
 
-body.main div.overlay {
+body.about div.banner {
+    color: white;
+    position: relative;
+    z-index: 1;
+    background-image: url('assets/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 12vh;
+}
+
+div.overlay {
     position: absolute;
     z-index: 2;
     top: 0;
@@ -193,7 +207,7 @@ body.main div.overlay {
     background: rgba(0, 0, 0, 0.5);
 }
 
-body.main div.content {
+div.content {
     position: absolute;
     z-index: 3;
     width: 90%;
@@ -265,19 +279,19 @@ body.main button.cv-btn {
 }
 
 body.main button.pf-btn:hover {
-    background-color: #f0f0f0;
-    transform: scale(1.1);
+    background-color: #e9e9e9;
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 body.main button.cv-btn:hover {
-    background-color: rgba(100,100,100,0.8);
-    transform: scale(1.1);
+    background-color: rgba(140,140,140,0.6);
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 body.main button.pf-btn:active, body.main button.cv-btn:active {
-    transform: scale(0.95) translateY(2px);
+    transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -332,11 +346,11 @@ body.main a.progress {
 
 body.main a.progress:hover {
     box-shadow: 0px 0px 5px 1px rgb(180,180,180);
-    transform: scale(0.9);
+    filter: brightness(0.9);
 }
 
 body.main a.progress:active {
-    filter: brightness(0.9);
+    transform: scale(0.95);
 }
 
 body.main img.icon-skill {
@@ -350,7 +364,7 @@ body.main div.gallery, body.main div.project, body.main div.bulletin, body.main 
     width: 90%;
     left: 50%;
     transform: translate(-50%, 0);
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 body.main section.subtitle {
@@ -363,10 +377,13 @@ body.main section.subtitle {
 body.main section.subtitle h2 {
     font-size: 1.5rem;
     margin: 10px;
+    user-select: none;
 }
 
 body.main section.subtitle h2 span {
     vertical-align: -2px;
+    margin-left: 5px;
+    user-select: text;
 }
 
 body.main img.sub-icon {
@@ -376,13 +393,9 @@ body.main img.sub-icon {
     transition: transform 0.3s ease;
 }
 
-body.main img.sub-icon:hover {
-    transform: scale(1.1);
-}
-
 body.main img.direct-arrow {
-    width: 42px;
-    padding: 5px;
+    width: 44px;
+    padding: 6px;
     border-radius: 50%;
     height: auto;
     vertical-align: middle;
@@ -415,21 +428,39 @@ body.main div.content-gallery {
 body.main img.img-gallery {
     width: 100%;
     height: auto;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 body.main img.img-gallery:hover {
-    filter: brightness(0.9);
-    transform: scale(1.03);
+    filter: brightness(0.8);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 body.main img.img-gallery:active {
-    transform: scale(0.99);
+    transform: scale(0.96);
 }
 
-.preview-container {
+body.main button.close-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    position: fixed;
+    color: white;
+    background: none;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+body.main button.close-btn:active {
+    color: grey;
+}
+
+body.main .preview-container {
     display: none;
     position: fixed;
     top: 0;
@@ -443,7 +474,7 @@ body.main img.img-gallery:active {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.preview-image {
+body.main .preview-image {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
@@ -452,16 +483,17 @@ body.main img.img-gallery:active {
     transform: scale(0.9);
     transition: transform 0.3s ease-in-out;
 }
-.preview-container.active {
+body.main .preview-container.active {
     opacity: 1;
 }
-.preview-container.active .preview-image {
+body.main .preview-container.active .preview-image, .close-btn {
     transform: scale(1);
 }
 
 body.main div.content-project {
     margin: 10px;
 }
+
 body.main div.project-mainbox, body.main div.project-subbox {
     background-image: url('assets/banner.webp');
     background-size: cover;
@@ -476,12 +508,11 @@ body.main div.project-mainbox, body.main div.project-subbox {
 }
 
 body.main div.project-mainbox:hover, body.main div.project-subbox:hover {
-    transform: scale(1.03);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 body.main div.project-mainbox:active, body.main div.project-subbox:active {
-    transform: scale(0.98);
+    transform: scale(0.96);
     filter: brightness(0.9);
 }
 
@@ -514,7 +545,7 @@ body.main div.subcontent-project {
 
 body.main button.btn-lm {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     padding: 10px 15px;
     border: none;
@@ -525,13 +556,12 @@ body.main button.btn-lm {
 }
 
 body.main button.btn-lm:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(0.96);
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 body.main button.btn-lm:active {
-    transform: translateY(1px);
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -542,7 +572,7 @@ body.main div.bulletin-content {
 body.main div.announcement {
     padding: 20px;
     margin: 15px 0;
-    border: 1px solid rgb(60, 60, 60);
+    border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     background-color: rgba(60, 60, 60, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -551,19 +581,19 @@ body.main div.announcement {
 body.main div.announcement h3 {
     margin-top: 0;
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 body.main div.announcement p {
     margin-bottom: 0;
     line-height: 1.5;
+    font-size: 0.9em;
 }
 
 body.main div.announcement:hover {
-    background-color: rgba(60, 60, 60, 0.2);
+    background-color: rgba(60, 60, 60, 0.15);
     transition: all 0.3s ease;
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-color: rgba(60, 60, 60, 0.5);
 }
 
@@ -573,35 +603,50 @@ body.main form#emailForm {
 }
 
 body.main input.item, body.main textarea.mess {
-    width: 100%;
+    width: 95%;
     max-width: 440px;
     padding: 5px;
     margin: 5px 0;
     border-radius: 5px;
-    border: 1px solid rgb(20,20,20);
-    font-family: 'poppins';
+    border: 1px solid rgba(20, 20, 20, 0.4);
+    font-family: 'poppins', sans-serif;
+}
+
+body.main input.item:hover, body.main textarea.mess:hover {
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.main input.item:focus, body.main textarea.mess:focus {
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 body.main textarea.mess {
     resize: vertical;
+    height: 160px;
+    min-height: 60px;
+    max-height: 400px;
 }
 
 body.main button[type=submit].submission {
-    width: 100%;
+    width: 95%;
     max-width: 440px;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid rgb(20,20,20);
     border-radius: 5px;
     background-color: rgb(20,20,20);
     color: white;
-    font-family: 'poppins';
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
 }
 
 body.main button[type=submit].submission:hover {
     background-color: darkslategray;
+}
+
+body.main button[type=submit].submission:active {
+    transform: scale(0.96);
 }
 
 body.main span#warns {
@@ -613,28 +658,26 @@ body.main span#warns {
 body.main div.catch {
     display: none;
     text-align: center;
-    background-color: rgba(140,140,140, 0.1);
+    background-color: rgba(60, 60, 60, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px rgb(180, 180, 180);
-    border-left: 10px solid rgb(60, 60, 60);
-    width: 90%;
-    max-width: 400px;
-    padding: 20px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 7px solid rgb(60, 60, 60);
+    width: 95%;
+    max-width: 440px;
+    padding: 10px;
+    justify-self: center;
+    z-index: 6;
     animation: fadeIn 0.5s ease-out;
 }
 
 body.main div.catch h3 {
-    color: #4a90e2;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 body.main div.catch p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
     line-height: 1.5;
 }
@@ -642,6 +685,12 @@ body.main div.catch p {
 @keyframes fadeIn {
     from { opacity: 0; transform: translate(-50%, -60%); }
     to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+body.about p.text-header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: -20px;
 }
 
 h6.tribute {
@@ -653,27 +702,34 @@ h6.tribute {
     border-top: 1px solid rgb(60, 60, 60);
 }
 
+@media screen and (max-width: 912px) {
+    body.main div.project-mainbox {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body.main h1.title {
-        font-size: 3.5rem;
+        font-size: 3.3  rem;
     }
     
     body.main p.pre-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     body.main p.description {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     body.main button.pf-btn, body.main button.cv-btn {
         font-size: 1rem;
-        padding: 5px 10px;
+        font-weight: bold;
+        padding: 7px 14px;
     }
 
     body.main div.skill {
         width: 95%;
-        margin: -100px auto 30px;
+        margin: -120px auto 30px;
         flex-direction: column;
     }
     
@@ -685,13 +741,12 @@ h6.tribute {
         width: 100%;
         margin: 10px 0;
     }
-    
-    body.main section.subtitle h2 {
-        font-size: 1.2rem;
-    }
 }
 
 @media screen and (max-width: 480px) {
+    *, html {
+        zoom: 0.96;
+    }
     body.main div.skill {
         margin: -50px auto 20px;
     }
