@@ -1,0 +1,96 @@
+form#emailForm {
+    display: block;
+    text-align: center;
+}
+
+input.item, textarea.mess {
+    width: 95%;
+    max-width: 440px;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(20, 20, 20, 0.4);
+    font-family: 'poppins', sans-serif;
+}
+
+input.item:hover, textarea.mess:hover {
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input.item:focus, textarea.mess:focus {
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea.mess {
+    resize: vertical;
+    height: 160px;
+    min-height: 60px;
+    max-height: 400px;
+}
+
+button[type=submit].submission {
+    width: 95%;
+    max-width: 440px;
+    padding: 10px;
+    border: 1px solid rgb(20,20,20);
+    border-radius: 5px;
+    background-color: rgb(20,20,20);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+}
+
+button[type=submit].submission:hover {
+    background-color: darkslategray;
+}
+
+button[type=submit].submission:active {
+    transform: scale(0.95);
+}
+
+span#warns {
+    color: rgb(255, 0, 0);
+    display: none;
+    margin-bottom: 15px;
+}
+
+div.catch {
+    display: none;
+    text-align: center;
+    background-color: rgba(60, 60, 60, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 7px solid rgb(60, 60, 60);
+    width: 95%;
+    max-width: 440px;
+    padding: 10px;
+    justify-self: center;
+    z-index: 6;
+    animation: fadeIn 0.5s ease-out;
+}
+
+div.catch h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #58cc14;
+}
+
+div.catch p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+p.text-header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: -20px;
+}

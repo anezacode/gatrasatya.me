@@ -1,0 +1,100 @@
+div.project {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 50px;
+}
+
+section.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.subtitle h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+    user-select: none;
+}
+
+section.subtitle h2 span {
+    vertical-align: -2px;
+    margin-left: 5px;
+    user-select: text;
+}
+
+div.content-project {
+    margin: 10px;
+}
+
+div.project-mainbox, div.project-subbox {
+    background-image: url('assets/banner.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 290px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+div.project-mainbox:hover, div.project-subbox:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+div.project-mainbox:active, div.project-subbox:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}
+div.project-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+div.project-mainbox:hover div.project-text,
+div.project-subbox:hover div.project-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+div.subcontent-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+button.btn-lm {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button.btn-lm:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button.btn-lm:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}

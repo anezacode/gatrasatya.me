@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact">
+        <form id="emailForm" action="">
+            <div class="input-box">
+                <div class="field">
+                    <input type="text" maxlength="32" placeholder="Username" class="item" id="name" autocomplete="off" required /><br />
+                    <input type="email" maxlength="64" placeholder="Email" class="item" id="email" autocomplete="off" required /><br />
+                    <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
+                </div>
+                <div class="field">
+                    <textarea maxlength="256" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
+                    <span id="warns"></span>
+                </div>
+            </div>
+            <button onclick="sendEmail()" class="submission" type="submit">Send</button>
+        </form>
+        <div class="catch" id="catch">
+            <h3>Thank You!</h3>
+            <p>Email will be sent immediately.</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
+</html>

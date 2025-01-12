@@ -1,0 +1,387 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+@font-face {
+    font-family: title;
+    src: url('../assets/fonts/gajraj-one.ttf');
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+::selection {
+    background-color: #555;
+    color: #fff;
+}
+
+br, input, img, button {
+    user-select: none;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+body.main {
+    background-color: #111;
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+div.banner {
+    color: white;
+    position: relative;
+    z-index: 1;
+    background-image: url('../assets/images/img-banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+div.overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.content {
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header.head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+h1.logo {
+    font-family: 'title';
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px 20px 0;
+    animation: glow 2s ease-in-out infinite;
+    transition: all 0.2s;
+}
+
+h1.logo:active {
+    filter: opacity(0.8);
+}
+
+ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-links li:first-child {
+    margin-right: 20px;
+}
+
+ul.nav-links li a i, ul.nav-links label i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+ul.nav-links li a i:active, ul.nav-links label i:active {
+    filter: opacity(0.8);
+}
+
+aside#menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 200px;
+    height: 100%;
+    background: #111;
+    z-index: 5;
+    overflow-y: auto;
+    padding-top: 60px;
+    border-left: 1px solid #333;
+    transition: right 0.5s ease-in-out;
+}
+
+aside#menu a, aside#menu p.close-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+aside#menu a:hover, aside#menu p.close-btn:hover {
+    color: #fff;
+}
+
+aside#menu a:active, aside#menu p.close-btn:active {
+    filter: opacity(0.8);
+}
+
+aside#menu p.close-btn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]#menu-checkbox {
+    display: none;
+}
+
+input[type="checkbox"]#menu-checkbox:checked + #menu {
+    right: 0;
+    transition: right 0.5s ease-in-out;
+}
+
+h1.title {
+    font-weight: 1000;
+    font-size: 3.6rem;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p.description {
+    font-size: 1.2rem;
+}
+
+a.smk-href {
+    color: white;
+    user-select: text;
+    transition: all 0.2s;
+}
+
+a.smk-href:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+a.smk-href:active {
+    color: #d0d0d0;
+}
+
+button.pf-btn, button.cv-btn {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+button.pf-btn, button.cv-btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+button.pf-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    margin-right: 10px;
+}
+
+button.cv-btn {
+    background-color: rgba(128,128,128,0.9);
+    color: white;
+}
+
+button.pf-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button.cv-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button.pf-btn:active {
+    transform: scale(0.95);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+button.cv-btn:active {
+    transform: scale(0.95);
+    background-color: rgba(128,128,128,0.7);
+}
+
+img.linked {
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 40px;
+    height: auto;
+    transition: all 0.2s;
+}
+
+img.linked:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+img.linked:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+div.report {
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    margin-bottom: 50px;
+}
+
+div.report-content {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+ 
+div.repo-project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+div.report-content i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+p.project-text span {
+    font-size: smaller;
+}
+
+footer.foot {
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+}
+
+div.run-text {
+    background-color: rgba(0, 0, 0,0.3);
+    z-index: 4;
+}
+
+p.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    animation: marquee 40s linear infinite;
+}
+
+p.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+div.attribute {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border-top: 1px solid #333;
+    user-select: none;
+}
+
+div.attribute div {
+    justify-content: space-between;
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    font-size: 16px;
+}
+
+div.attribute p, div.attribute h5 {
+    vertical-align: middle;
+}
+
+i.fa-brands {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1320px) {
+    div.report {
+        zoom: 0.94;
+        margin-bottom: -20px;
+    }
+    div.report-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    div.content {
+        zoom: 0.88;
+    }
+
+    div.report {
+        zoom: 0.88;
+        margin-bottom: -20px;
+    }
+
+    div.report-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    footer.foot {
+        zoom: 0.88;
+    }
+}
