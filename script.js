@@ -45,7 +45,7 @@ function submitPassword() {
     submitBtn.style.backgroundColor = "#50cc00";
     submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #50cc00';
     setTimeout(() => {
-        window.location.href = "../main/";
+        window.location.href = "main/";
         console.log(log + "Redirecting.");
     }, 1000);
     return false;
