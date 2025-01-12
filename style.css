@@ -69,12 +69,16 @@ div.form-input input[type="password"] {
     width: 235px;
     padding-left: 10px;
     background: none;
-    background-color: transparent;
     border: none;
     font-size: 16px;
     cursor: not-allowed;
     vertical-align: 0.5px;
     outline: none;
+}
+
+div.form-input input[type="password"]:focus {
+    background: none;
+    border: none;
 }
 
 div.form-input input[type="submit"] {
