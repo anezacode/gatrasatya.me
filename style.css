@@ -57,18 +57,20 @@ h1.logo {
 div.form-input {
     background-color: #fff;
     justify-self: center;
-    width: 300px;
+    width: max-content;
     border-radius: 20px;
     margin-top: 16px;
+    display: flex;
+    flex-wrap: nowrap;
     box-shadow: 0px 0px 5px 0.5px #555;
     cursor: not-allowed;
 }
 
 div.form-input input[type="password"] {
     font-family: 'poppins', sans-serif;
-    width: 235px;
-    padding-left: 10px;
-    background: none;
+    margin-left: 16px;
+    margin-right: 4px;
+    width: 246px;
     border: none;
     font-size: 16px;
     cursor: not-allowed;
@@ -77,13 +79,12 @@ div.form-input input[type="password"] {
 }
 
 div.form-input input[type="password"]:focus {
-    background: none;
     border: none;
 }
 
 div.form-input input[type="submit"] {
     font-family: 'poppins', sans-serif;
-    width: 51px;
+    width: 50px;
     background-color: #999;
     border-radius: 20px;
     height: 100%;
@@ -148,4 +149,10 @@ p.tip {
 span.click-return:hover {
     color: #fff;
     cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    *, html {
+        zoom: 0.94;
+    }
 }
