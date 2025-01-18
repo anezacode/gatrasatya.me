@@ -1,10 +1,12 @@
 # gatrasatya.me
 
-**Nama:** Anggatra Satya Putra N.
+**Nama:** Anggatra Satya Putra N
+
+**Jenis Kelamin:** Laki-laki
 
 **Usia:** 16 tahun
 
-**Tempat, Tanggal Lahir:** Jakarta, 15 Mei 2008
+**TTL:** Jakarta, 15 Mei 2008
 
 **Alamat:** Jl. Graha Cibubur View, Jatiraden, Jatisampurna, Bekasi, Jawa Barat, Indonesia
 
