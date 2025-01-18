@@ -1,6 +1,5 @@
 # gatrasatya.me
 
-About Me?
 **Nama:** Anggatra Satya Putra N.
 
 **Usia:** 16 tahun
