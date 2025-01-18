@@ -1,36 +1,189 @@
-div.project {
-    position: relative;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 50px;
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+@font-face {
+    font-family: title;
+    src: url('../../assets/fonts/gajraj-one.ttf');
 }
 
-section.subtitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+*, html {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
 }
 
-section.subtitle h2 {
-    font-size: 1.5rem;
-    margin: 10px;
+::selection {
+    background-color: #555;
+    color: #fff;
+}
+
+br, input, img, button {
     user-select: none;
 }
 
-section.subtitle h2 span {
-    vertical-align: -2px;
-    margin-left: 5px;
-    user-select: text;
+input:focus, button:focus, textarea:focus {
+    outline: none;
 }
 
-div.content-project {
+a, button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+body.project {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+div.banner {
+    background-color: #111;
+}
+
+header.head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+h1.logo {
+    font-family: 'title';
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px 20px 0;
+    animation: glow 2s ease-in-out infinite;
+    transition: all 0.2s;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 1px #555;
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px #555;
+    }
+
+    100% {
+        text-shadow: 0px 0px 1px #555;
+    }
+}
+
+h1.logo:active {
+    filter: opacity(0.8);
+}
+ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-links li:first-child {
+    margin-right: 20px;
+}
+
+ul.nav-links li a i, ul.nav-links label i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+ul.nav-links li a i:active, ul.nav-links label i:active {
+    filter: opacity(0.8);
+}
+
+aside#menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 200px;
+    height: 100%;
+    background: #111;
+    z-index: 5;
+    overflow-y: auto;
+    padding-top: 60px;
+    border-left: 1px solid #333;
+    transition: right 0.5s ease-in-out;
+}
+
+aside#menu a, aside#menu p.close-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+aside#menu a:hover, aside#menu p.close-btn:hover {
+    color: #fff;
+}
+
+aside#menu a:active, aside#menu p.close-btn:active {
+    filter: opacity(0.8);
+}
+
+aside#menu p.close-btn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]#menu-checkbox {
+    display: none;
+}
+
+input[type="checkbox"]#menu-checkbox:checked + #menu {
+    right: 0;
+    transition: right 0.5s ease-in-out;
+}
+
+div.content {
+    width: 90%;
+    justify-self: center;
+}
+
+div.content h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+div.project {
     margin: 10px;
 }
 
-div.project-mainbox, div.project-subbox {
-    background-image: url('assets/banner.webp');
+div.project-mainbox {
+    background-image: url('../../assets/images/img-banner.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 290px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+div.project-subbox {
+    background-image: url('../../assets/images/img-banner.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -65,36 +218,60 @@ div.project-text {
     transition: all 0.3s ease;
 }
 
-div.project-mainbox:hover div.project-text,
-div.project-subbox:hover div.project-text {
+div.project-mainbox:hover div.project-text, div.project-subbox:hover div.project-text {
     background-color: rgba(0, 0, 0, 0.7);
     padding-bottom: 20px;
 }
 
 div.subcontent-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
     grid-gap: 10px;
 }
 
-button.btn-lm {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
+footer.foot {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border-top: 1px solid #333;
+    user-select: none;
+    position: relative;
+    bottom: 0;
 }
 
-button.btn-lm:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+footer.foot div {
+    justify-content: space-between;
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    font-size: 16px;
 }
 
-button.btn-lm:active {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+footer.foot p, footer.foot h5 {
+    vertical-align: middle;
+}
+
+i.fa-brands {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    div.content {
+        zoom: 0.94;
+    }
+
+    div.subcontent-project {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+
+    footer.foot {
+        zoom: 0.80;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.subcontent-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

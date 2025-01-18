@@ -5,38 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GatraSatya</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />  
 </head>
 <body class="about">
-    <nav class="navbar">
-        <a class="un" href="/main/">
-            <h1 class="logo">gatrasatya</h1>
-        </a>
-        <span class="version">BETA</span>
-    </nav>
     <div class="banner">
-        <div class="overlay"></div>
-        <div class="content">
-            <p class="text-header">About Me</p>
+        <header class="head">
+            <a class="un" href="../">
+                <h1 class="logo">gatrasatya</h1>
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="../">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <label for="menu-checkbox">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </li>
+            </ul>
+        </header>
+        <input type="checkbox" id="menu-checkbox" />
+        <aside id="menu" class="menu">
+            <p class="close-btn" onclick="closeBtn()">&times;</p>
+            <nav>
+                <ul>    
+                    <li><a href="../../main/">Home</a></li>
+                    <li><a href="../../main/about/">About</a></li>
+                    <li><a href="../../main/project/">Project</a></li>
+                    <li><a href="../../main/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="content">
+        <h1>About Me</h1>
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ea eum facilis incidunt impedit assumenda nulla deserunt. Quo ex praesentium eum maxime aspernatur possimus repellendus adipisci totam iure sequi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eos blanditiis reiciendis eum ratione et pariatur iure, excepturi est quia voluptatem voluptate quae, nihil veniam ex. Ad pariatur ducimus aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero cupiditate nam, vitae sequi delectus rem ad praesentium quod nobis culpa quidem voluptate dignissimos. Ea odio expedita rerum animi saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic modi temporibus, quos perspiciatis dolorum porro dolore. Neque quas labore error, possimus, ut, similique necessitatibus voluptas voluptates ullam nesciunt porro ex.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ea eum facilis incidunt impedit assumenda nulla deserunt. Quo ex praesentium eum maxime aspernatur possimus repellendus adipisci totam iure sequi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eos blanditiis reiciendis eum ratione et pariatur iure, excepturi est quia voluptatem voluptate quae, nihil veniam ex. Ad pariatur ducimus aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero cupiditate nam, vitae sequi delectus rem ad praesentium quod nobis culpa quidem voluptate dignissimos. Ea odio expedita rerum animi saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic modi temporibus, quos perspiciatis dolorum porro dolore. Neque quas labore error, possimus, ut, similique necessitatibus voluptas voluptates ullam nesciunt porro ex.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ea eum facilis incidunt impedit assumenda nulla deserunt. Quo ex praesentium eum maxime aspernatur possimus repellendus adipisci totam iure sequi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eos blanditiis reiciendis eum ratione et pariatur iure, excepturi est quia voluptatem voluptate quae, nihil veniam ex. Ad pariatur ducimus aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero cupiditate nam, vitae sequi delectus rem ad praesentium quod nobis culpa quidem voluptate dignissimos. Ea odio expedita rerum animi saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic modi temporibus, quos perspiciatis dolorum porro dolore. Neque quas labore error, possimus, ut, similique necessitatibus voluptas voluptates ullam nesciunt porro ex.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum ea eum facilis incidunt impedit assumenda nulla deserunt. Quo ex praesentium eum maxime aspernatur possimus repellendus adipisci totam iure sequi!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eos blanditiis reiciendis eum ratione et pariatur iure, excepturi est quia voluptatem voluptate quae, nihil veniam ex. Ad pariatur ducimus aperiam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero cupiditate nam, vitae sequi delectus rem ad praesentium quod nobis culpa quidem voluptate dignissimos. Ea odio expedita rerum animi saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic modi temporibus, quos perspiciatis dolorum porro dolore. Neque quas labore error, possimus, ut, similique necessitatibus voluptas voluptates ullam nesciunt porro ex.</p>
+            <br>
         </div>
     </div>
-    <div class="biodata">
-        <h2>Who Am I?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ad rem? Voluptatem nostrum, sunt illo dolorem soluta cumque qui tempore est quidem suscipit enim eum molestias mollitia, laborum iste eaque.</p><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi ratione accusantium sequi non obcaecati illum reiciendis reprehenderit ipsam repudiandae, libero deserunt ducimus tenetur neque vel placeat maxime nesciunt. Totam.</p><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam eaque modi veritatis omnis accusamus voluptas quo itaque dolor officia, voluptatum doloremque dolorum enim repellat odio qui aspernatur repellendus minus!</p><br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quidem recusandae porro provident sequi ab mollitia, eius odit molestiae dolore vitae a, aliquid officia. Praesentium illum magni sunt delectus blanditiis.</p><br>
-    </div>
-    <div class="skill">
-        <a href="https://www.w3schools.com/html" class="progress" target="_blank">
-            <img class="icon-skill" draggable="false" src="assets/logo-html.webp" /><br />
-        </a>
-        <a href="https://www.w3schools.com/css" class="progress" target="_blank">
-            <img class="icon-skill" draggable="false" src="assets/logo-css.webp" /><br />
-        </a>  
-        <a href="https://www.w3schools.com/js" class="progress" target="_blank">
-            <img class="icon-skill" draggable="false" src="assets/logo-js.webp" /><br />
-        </a>
-    </div>
+    <footer class="foot">
+        <div>
+            <p>
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-node-js" title="Node JS"></i>
+                <i class="fa-brands fa-php" title="PHP"></i>
+                <i class="fa-brands fa-laravel" title="Laravel"></i>
+            </p>
+            <h5>Ⓒ AnezaCode</h5>
+        </div>
+    </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

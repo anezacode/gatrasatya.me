@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GatraSatya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />  
 </head>
-<body>
-    <div class="project">
-        <section class="subtitle">
-            <h2>
-                <img class="sub-icon" draggable="false" src="assets/icons8-project.svg">
-                <span>Project</span>
-            </h2>
-            <h2>
-                <a href="">
-                    <img class="direct-arrow" draggable="false" src="assets/icons8-arrow.svg">
-                </a>
-            </h2>
-        </section>
-        <div class="content-project">
+<body class="project">
+    <div class="banner">
+        <header class="head">
+            <a class="un" href="../">
+                <h1 class="logo">gatrasatya</h1>
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="../../main/contact/">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <label for="menu-checkbox">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </li>
+            </ul>
+        </header>
+        <input type="checkbox" id="menu-checkbox" />
+        <aside id="menu" class="menu">
+            <p class="close-btn" onclick="closeBtn()">&times;</p>
+            <nav>
+                <ul>    
+                    <li><a href="../../main/">Home</a></li>
+                    <li><a href="../../main/about/">About</a></li>
+                    <li><a href="../../main/project/">Project</a></li>
+                    <li><a href="../../main/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="content">
+        <h1>My Project</h1>
+        <div class="project">
             <a href="">
                 <div class="project-mainbox">
                     <div class="project-text">
                         <span><h2>Project</h2>Lorem ipsum</span>
-                        <button class="btn-lm">Learn more</button>
                     </div>
                 </div>
             </a>     
@@ -33,7 +55,6 @@
                     <div class="project-subbox">
                         <div class="project-text">
                             <span><h2>Project</h2>Lorem ipsum</span>
-                            <button class="btn-lm">Learn more</button>
                         </div>  
                     </div>
                 </a>
@@ -41,7 +62,6 @@
                     <div class="project-subbox">
                         <div class="project-text">
                             <span><h2>Project</h2>Lorem ipsum</span>
-                            <button class="btn-lm">Learn more</button>
                         </div>
                     </div>
                 </a>
@@ -49,12 +69,47 @@
                     <div class="project-subbox">
                         <div class="project-text">
                             <span><h2>Project</h2>Lorem ipsum</span>
-                            <button class="btn-lm">Learn more</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="project-subbox">
+                        <div class="project-text">
+                            <span><h2>Project</h2>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="project-subbox">
+                        <div class="project-text">
+                            <span><h2>Project</h2>Lorem ipsum</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="project-subbox">
+                        <div class="project-text">
+                            <span><h2>Project</h2>Lorem ipsum</span>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
     </div>
+    <footer class="foot">
+        <div>
+            <p>
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-node-js" title="Node JS"></i>
+                <i class="fa-brands fa-php" title="PHP"></i>
+                <i class="fa-brands fa-laravel" title="Laravel"></i>
+            </p>
+            <h5>Ⓒ AnezaCode</h5>
+        </div>
+    </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

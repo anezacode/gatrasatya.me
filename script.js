@@ -5,7 +5,7 @@ const log = "[4n3z4] ";
 document.addEventListener("DOMContentLoaded", () => {
     console.log(log + "Content Loaded.");
     document.querySelector(".form-input").style.cursor = "text";
-    inputPassword.setAttribute("maxlength", 34);
+    inputPassword.setAttribute("maxlength", 36);
     inputPassword.disabled = false;
     inputPassword.style.cursor = "text";
     

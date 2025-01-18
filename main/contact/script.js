@@ -3,6 +3,15 @@ const nama = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const mess = document.getElementById("message");
+const log = "[4n3z4] ";
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log(log + "Content Loaded.");
+});
+
+function closeBtn() {
+    document.getElementById('menu-checkbox').checked = false;
+}
 
 function sendEmail() {
     const _0x3061b5 = document.getElementById("warns");
@@ -41,6 +50,7 @@ function sendEmail() {
 }
 
 function setNotif() {
+    console.log(log + "Email has been sent.");
     document.getElementById("catch").style.display = "block";
     document.getElementById("emailForm").style.display = "none";
     setTimeout(() => {
@@ -50,4 +60,4 @@ function setNotif() {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-});
+}); 

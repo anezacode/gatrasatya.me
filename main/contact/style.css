@@ -1,3 +1,170 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+@font-face {
+    font-family: title;
+    src: url('../../assets/fonts/gajraj-one.ttf');
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+::selection {
+    background-color: #555;
+    color: #fff;
+}
+
+br, input, img, button {
+    user-select: none;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+body.contact {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+div.banner {
+    background-color: #111;
+}
+
+header.head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+h1.logo {
+    font-family: 'title';
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px 20px 0;
+    animation: glow 2s ease-in-out infinite;
+    transition: all 0.2s;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 1px #555;
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px #555;
+    }
+
+    100% {
+        text-shadow: 0px 0px 1px #555;
+    }
+}
+
+h1.logo:active {
+    filter: opacity(0.8);
+}
+ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-links li:first-child {
+    margin-right: 20px;
+}
+
+ul.nav-links li a i, ul.nav-links label i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+ul.nav-links li a i:active, ul.nav-links label i:active {
+    filter: opacity(0.8);
+}
+
+aside#menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 200px;
+    height: 100%;
+    background: #111;
+    z-index: 5;
+    overflow-y: auto;
+    padding-top: 60px;
+    border-left: 1px solid #333;
+    transition: right 0.5s ease-in-out;
+}
+
+aside#menu a, aside#menu p.close-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+aside#menu a:hover, aside#menu p.close-btn:hover {
+    color: #fff;
+}
+
+aside#menu a:active, aside#menu p.close-btn:active {
+    filter: opacity(0.8);
+}
+
+aside#menu p.close-btn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]#menu-checkbox {
+    display: none;
+}
+
+input[type="checkbox"]#menu-checkbox:checked + #menu {
+    right: 0;
+    transition: right 0.5s ease-in-out;
+}
+
+div.content {
+    width: 90%;
+    justify-self: center;
+}
+
+div.content h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
 form#emailForm {
     display: block;
     text-align: center;
@@ -31,8 +198,8 @@ textarea.mess {
 }
 
 button[type=submit].submission {
-    width: 95%;
-    max-width: 440px;
+    width: 100%;
+    max-width: 450px;
     padding: 10px;
     border: 1px solid rgb(20,20,20);
     border-radius: 5px;
@@ -40,6 +207,7 @@ button[type=submit].submission {
     color: white;
     font-family: 'poppins', sans-serif;
     font-size: 15px;
+    transition: 0.2s;
 }
 
 button[type=submit].submission:hover {
@@ -63,7 +231,7 @@ div.catch {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-left: 7px solid rgb(60, 60, 60);
+    border-left: 5px solid rgb(60, 60, 60);
     width: 95%;
     max-width: 440px;
     padding: 10px;
@@ -75,7 +243,7 @@ div.catch {
 div.catch h3 {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #58cc14;
+    color: rgb(60,60,60);
 }
 
 div.catch p {
@@ -93,4 +261,41 @@ p.text-header {
     font-size: 3rem;
     font-weight: bold;
     margin-top: -20px;
+}
+
+footer.foot {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border-top: 1px solid #333;
+    user-select: none;
+    position: absolute;
+    bottom: 0;
+}
+
+footer.foot div {
+    justify-content: space-between;
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    font-size: 16px;
+}
+
+footer.foot p, footer.foot h5 {
+    vertical-align: middle;
+}
+
+i.fa-brands {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    div.content {
+        zoom: 0.94;
+    }
+
+    footer.foot {
+        zoom: 0.80;
+    }
 }

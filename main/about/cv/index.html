@@ -1,268 +1,223 @@
-<html>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio List</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatraSatya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="../../../favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
-   font-family: "Montserrat", sans-serif; 
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-}
-
-body {
-    background-color: #f0f0f0;
-}
-
-.container {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.35fr 0.65fr;
-    width: 200mm;
-    height: 190mm;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
-
-img {
-    float: left;
-    width: 100%;
-    max-width: 100%;
-    height: 70%;
-    display: block;
-    margin: 0;
-}
-
-.container .card-one {
-    background-color: #d0d0d0;
-    width: 100%;
-    color: rgb(7, 7, 7) ;
-    font-size: large;
-}
-
-.container .card-two {
-    background-color: #F0DCC4;;
-    padding: 40px 20px;
-    padding-right: 75px;
-    color: black;
-}
-
-.container .card-two .portofolio {
-    margin-top: 250px;
-    color: black;
-}
-
-.container-port {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.40fr 0.60fr;
-    width: 210mm;
-    height: 297mm;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
-
-.container-port .port-one {
-    padding: 40px 20px;
-    padding-left: 35px;
-    background-color: rgb(7, 7, 7);
-    width: 100%;
-    color: white;
-}
-
-.container-port .port-one .profile {
-    display: inline-flex;
-    margin-top: 5px;
-    margin-bottom: 3px;
-    margin-left: 5px;
-}
-
-.container-port .port-one .contact {
-    margin-top: 30px;
-    margin-left: 25px;
-}
-
-.container-port .port-one .contact>* {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.4fr 0.5fr;
-    margin-top: 25px;
-}
-
-.container .port-one .contact>* .text {
-    text-align: left;
-}
-
-.container-port .port-two {
-    background-color: #fdfdfd ;
-    padding: 40px 20px;
-    padding-right: 0px;
-    color: black;
-}
-
-.container-port .port-two h4 {
-    background-color: #e2f0fa;
-    margin: 0px;
-    padding:15px;
-    padding-left: 5px;
-    text-align:start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.container-port .port-two .pendidikan {
-    margin-top: 30px; 
-    margin-bottom: 20px;
-}
-.container-port .port-two .sertifikat {
-    margin-top: 30px; 
-    margin-bottom: 20px;
-}
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        .container-port {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.40fr 0.60fr;
+            width: 210mm;
+            height: 297mm;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .fas {
+            font-size: 20px;
+            padding: 3px;
+            vertical-align: middle;
+        }
+        .port-one {
+            padding: 40px 20px;
+            padding-left: 35px;
+            background-color: rgb(7, 7, 7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .port-one h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .port-one p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact {
+            margin-top: 30px;
+        }
+        .contact div {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact .text {
+            margin-left: 10px;
+        }
+        .skill {
+            margin: 30px 0;
+        }
+        .skill ul {
+            margin-left: 20px;
+        }
+        .port-two {
+            background-color: #fdfdfd;
+            padding: 40px 20px;
+            padding-right: 0;
+            color: black;
+        }
+        .port-two h4 {
+            background-color: #e2f0fa;
+            margin: 0;
+            padding: 15px;
+            padding-left: 5px;
+            text-align: start;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section table {
+            width: 100%;
+        }
+        .section table th, .section table td {
+            padding: 10px;
+        }
+        .section table ul {
+            margin-left: 20px;
+        }
+        a button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a button:hover {
+            background-color: #0056b3;
+        }
     </style>
-    <body>
-        <!-- use div for setup layout in web, container port one for left side-->
-        <div class="container-port">
-            <div class="port-one">
-                <div class="profile">
-                    <img src="assets/icon.webp" style="width: 250px;height: 250px;border-radius: 100%;">
+</head>
+<body>
+    <div class="container-port">
+        <div class="port-one">
+            <div class="profile">
+                <img src="../../../assets/images/img-logo.webp" alt="Profile Logo">
+            </div>
+            <h2>Anggatra Satya</h2>
+            <p><strong>KELAS XI PPLG I</strong></p>
+            <div class="contact">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <div class="text">anezacode@gmail.com</div>
                 </div>
-                <h2 style="margin-top: 20px; text-align: center;">Gatra Satya</h2>
-                <p style="margin-top: 25px; margin-left: 25px;"><b>KELAS XI PPLG I</b></p>
-                <div class="contact">
-                    <div>
-                        <i class="fas fa-envelope"></i>
-                        <div class="text" style="text-align: left;"> gatra4419@gmail.com</div>
-                    </div> 
-                    <div>
-                        <i class="fas fa-user"></i>
-                        <div class="text" style="text-align: left;">(+62)8123456789</div>
-                    </div>
-                    <div>
-                        <i class="fas fa-home"></i>
-                        <div class="text"><a href="https://s.id/gatrasatya" target="_blank" style="color: azure; text-align: left;">gatrasatya.me</a></div>
-                    </div>
+                <div>
+                    <i class="fas fa-user"></i>
+                    <div class="text">(+62)8123456789</div>
                 </div>
-                
-                <div class="skill">
-                    <h3 style="margin-top: 75px; margin-bottom: 30px;margin-left: 25px;">SKILLS </h3> 
-                    <ul style="margin-left: 55px;">
-                        <li>Server Management</li>
-                        <li>Cloud Computing (AWS Services)</li>
-                        <li>IaC (Terraform)</li>
-                        <li>Monitoring Tools</li>
-                        <li>DevOps Optimization</li>
-                    </ul>
-                </div>
-
-                <div><br>
-                    <a href="../../../main/">
-                        <button>Return to Home</button>
-                    </a>
+                <div>
+                    <i class="fas fa-home"></i>
+                    <div class="text"><a href="../../../main/" target="_blank" style="color: azure;">gatrasatya.me</a></div>
                 </div>
             </div>
-                
-            <!-- use div for setup layout in web, container port two for right side-->
-            <div class="port-two">
-                <div class="section">
-                    <div>
-                        <h4>ORGANISASI YANG PERNAH DIIKUTI</h4>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>
-                                <!--<img src="image/plane1.jpg" alt="plane" style="align-self:center; width:60px; height:40px; margin-top:25px;">-->
-                            </th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 30px; margin-bottom: 20px;"><b>BADAN DAKWAH ISLAM</b></p></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 10px; padding-right: 70px; margin-bottom: 10px;"><i>Agustus 2019 - Desember 2021 (2 tahun, 4 bulan)</i></p>
-                                <ul style="margin-left: 45px; padding-right: 70px; margin-bottom: 10px;">
-                                    <li>Sebagai Bendahara 1 periode 2020/2021</li>
-                                    <li>Ketua Sie Dana Acara Keagamaan di Sekolah</li>
-                                    <li>Anggota Sie Ibadah untuk pembentukan jadwal dan agenda BDI</li>
-                                </ul>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <!--<img src="image/plane1.jpg" alt="plane" style="align-self:center; width:60px; height:40px; margin-top:25px;">-->
-                            </th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 30px; margin-bottom: 20px;"><b>ENGLISH CLUB</b></p></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 10px; padding-right: 70px; margin-bottom: 10px;"><i>Agustus 2019 - Maret 2020(6 Bulan)</i></p>
-                                <ul style="margin-left: 45px; padding-right: 50px; margin-bottom: 30px;">
-                                    <li>Aktif berorganisasi dalam bahasa inggris</li>
-                                    <li>Melakukan tugas angggota dan kumpulan</li>
-                                </ul>
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="section">
-                    <div>
-                        <h4>PENDIDIKAN</h4>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>
-                              <!--  <img src="image/toga1.jpg" alt="toga" style="align-self: center; width:90px; height:70px; margin-top:15px;">-->
-                            </th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 30px; margin-bottom: 20px;"><b>S1 PJJ TEKNIK INFORMATIKA</b></p></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-bottom: 10px;">UNIVERSITAS SIBER ASIA <br><i>TAHUN 2022</i></p>
-                                <ol style="margin-left:45px; padding-right: 70px;margin-bottom: 30px;">
-                                    <li>Bismillah Cum Laude</li>
-                                    <li>Target IPK : 4.0</li>
-                                    <li>Penerapan Cloud Computing dalam perkembangan Artificial intelligence</li>
-                                </ol>
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-                <div class="section">
-                    <div>
-                        <h4>SERTIFIKAT KEAHLIAN</h4>
-                    </div>
-                    <table class="keahlian">
-                        <tr>
-                            <th>
-                               <!-- <img src="image/medal.jpg" alt="certifikat" style="width:50px; height:50px;"> -->
-                            </th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 30px; margin-bottom: 20px;"><b>AWS CLOUD PARTICIONER</b></p>
-                                <p style="margin-left: 25px; "><b>PLATFROM : AWS Skill Builder</b></p>
-                                <p style="margin-left: 25px;">2023</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <!-- <img src="image/medal.jpg" alt="certifikat" style="width:50px; height:50px;"> -->
-                            </th>
-                            <th style="text-align: left;font-weight: normal;">
-                                <p style="margin-left: 25px; margin-top: 30px;"><b>Ketua Web Divisi Orens Solution</b></p>
-                                <p style="margin-left: 25px;">Pengurus Orens Solution divisi Web</p>
-                            </th>
-                        </tr>
-                    </table>
-                </div>
+            <div class="skill">
+                <h3>SKILLS</h3>
+                <ul>
+                    <li>Server Management</li>
+                    <li>Cloud Computing (AWS Services)</li>
+                    <li>IaC (Terraform)</li>
+                    <li>Monitoring Tools</li>
+                    <li>DevOps Optimization</li>
+                </ul>
             </div>
-    </body>
+            <div>
+                <a href="../../../main/">
+                    <button>Return to Home</button>
+                </a>
+            </div>
+        </div>
+        <div class="port-two">
+            <div class="section">
+                <h4>ORGANISASI YANG PERNAH DIIKUTI</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <p><strong>BADAN DAKWAH ISLAM</strong></p>
+                            <p><em>Agustus 2019 - Desember 2021 (2 tahun, 4 bulan)</em></p>
+                            <ul>
+                                <li>Sebagai Bendahara 1 periode 2020/2021</li>
+                                <li>Ketua Sie Dana Acara Keagamaan di Sekolah</li>
+                                <li>Anggota Sie Ibadah untuk pembentukan jadwal dan agenda BDI</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>ENGLISH CLUB</strong></p>
+                            <p><em>Agustus 2019 - Maret 2020(6 Bulan)</em></p>
+                            <ul>
+                                <li>Aktif berorganisasi dalam bahasa inggris</li>
+                                <li>Melakukan tugas angggota dan kumpulan</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section">
+                <h4>PENDIDIKAN</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <p><strong>S1 PJJ TEKNIK INFORMATIKA</strong></p>
+                            <p>UNIVERSITAS SIBER ASIA <br><em>TAHUN 2022</em></p>
+                            <ul>
+                                <li>Bismillah Cum Laude</li>
+                                <li>Target IPK : 4.0</li>
+                                <li>Penerapan Cloud Computing dalam perkembangan Artificial intelligence</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section">
+                <h4>SERTIFIKAT KEAHLIAN</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <p><strong>AWS CLOUD PARTICIONER</strong></p>
+                            <p><strong>PLATFROM: AWS Skill Builder</strong></p>
+                            <p>2023</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>Ketua Web Divisi Orens Solution</strong></p>
+                            <p>Pengurus Orens Solution divisi Web</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,54 +1,204 @@
-body.about {
-    position: relative;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 50px;
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+@font-face {
+    font-family: title;
+    src: url('../../assets/fonts/gajraj-one.ttf');
 }
 
-div.skill {
-    position: relative;
-    z-index: 4;
-    width: 90%;
-    max-width: 1200px;
-    margin: -100px auto 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+*, html {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
 }
 
-a.progress {
-    background-color: white;
-    width: calc(33.33% - 20px);
-    min-width: 200px;
-    max-width: 300px;
-    height: auto;
-    box-shadow: 0px 0px 10px 1px rgb(150,150,150);
-    border-radius: 20px;
+::selection {
+    background-color: #555;
+    color: #fff;
+}
+
+br, input, img, button {
+    user-select: none;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+a, button {
+    text-decoration: none;
     color: black;
     cursor: pointer;
-    margin: 10px;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 5;
+    user-select: none;
+}
+
+body.about {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+div.banner {
+    background-color: #111;
+}
+
+
+header.head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    justify-content: space-between;
     align-items: center;
+    user-select: none;
 }
 
-a.progress:hover {
-    box-shadow: 0px 0px 5px 1px rgb(180,180,180);
-    filter: brightness(0.9);
+h1.logo {
+    font-family: 'title';
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px 20px 0;
+    animation: glow 2s ease-in-out infinite;
+    transition: all 0.2s;
 }
 
-a.progress:active {
-    transform: scale(0.95);
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 1px #555;
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px #555;
+    }
+
+    100% {
+        text-shadow: 0px 0px 1px #555;
+    }
 }
 
-img.icon-skill {
-    padding: 16px;
-    width: 50%;
-    height: auto;
+h1.logo:active {
+    filter: opacity(0.8);
+}
+ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-links li:first-child {
+    margin-right: 20px;
+}
+
+ul.nav-links li a i, ul.nav-links label i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+ul.nav-links li a i:active, ul.nav-links label i:active {
+    filter: opacity(0.8);
+}
+
+aside#menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 200px;
+    height: 100%;
+    background: #111;
+    z-index: 5;
+    overflow-y: auto;
+    padding-top: 60px;
+    border-left: 1px solid #333;
+    transition: right 0.5s ease-in-out;
+}
+
+aside#menu a, aside#menu p.close-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+aside#menu a:hover, aside#menu p.close-btn:hover {
+    color: #fff;
+}
+
+aside#menu a:active, aside#menu p.close-btn:active {
+    filter: opacity(0.8);
+}
+
+aside#menu p.close-btn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]#menu-checkbox {
+    display: none;
+}
+
+input[type="checkbox"]#menu-checkbox:checked + #menu {
+    right: 0;
+    transition: right 0.5s ease-in-out;
+}
+
+div.content {
+    width: 90%;
+    justify-self: center;
+}
+
+div.content h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+footer.foot {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border-top: 1px solid #333;
+    user-select: none;
+    position: relative;
+    bottom: 0;
+}
+
+footer.foot div {
+    justify-content: space-between;
+    justify-self: center;
+    width: 90%;
+    display: flex;
+    font-size: 16px;
+}
+
+footer.foot p, footer.foot h5 {
+    vertical-align: middle;
+}
+
+i.fa-brands {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    div.content {
+        zoom: 0.94;
+    }
+
+    footer.foot {
+        zoom: 0.80;
+    }
 }

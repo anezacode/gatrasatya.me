@@ -3,30 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatraSatya</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />  
 </head>
-<body>
-    <div class="contact">
-        <form id="emailForm" action="">
-            <div class="input-box">
-                <div class="field">
-                    <input type="text" maxlength="32" placeholder="Username" class="item" id="name" autocomplete="off" required /><br />
-                    <input type="email" maxlength="64" placeholder="Email" class="item" id="email" autocomplete="off" required /><br />
-                    <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
+<body class="contact">
+    <div class="banner">
+        <header class="head">
+            <a class="un" href="../">
+                <h1 class="logo">gatrasatya</h1>
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="../../main/contact/">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <label for="menu-checkbox">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </li>
+            </ul>
+        </header>
+        <input type="checkbox" id="menu-checkbox" />
+        <aside id="menu" class="menu">
+            <p class="close-btn" onclick="closeBtn()">&times;</p>
+            <nav>
+                <ul>    
+                    <li><a href="../../main/">Home</a></li>
+                    <li><a href="../../main/about/">About</a></li>
+                    <li><a href="../../main/project/">Project</a></li>
+                    <li><a href="../../main/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="content">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <form id="emailForm">
+                <div class="input-box">
+                    <div class="field">
+                        <input type="text" maxlength="32" placeholder="Username" class="item" id="name" autocomplete="off" required /><br />
+                        <input type="email" maxlength="64" placeholder="Email" class="item" id="email" autocomplete="off" required /><br />
+                        <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
+                    </div>
+                    <div class="field">
+                        <textarea maxlength="256" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
+                        <span id="warns"></span>
+                    </div>
                 </div>
-                <div class="field">
-                    <textarea maxlength="256" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
-                    <span id="warns"></span>
-                </div>
+                <button onclick="sendEmail()" class="submission" type="submit">Send</button>
+            </form>
+            <div class="catch" id="catch">
+                <h3>Thank You!</h3>
+                <p>Email will be sent immediately.</p>
             </div>
-            <button onclick="sendEmail()" class="submission" type="submit">Send</button>
-        </form>
-        <div class="catch" id="catch">
-            <h3>Thank You!</h3>
-            <p>Email will be sent immediately.</p>
         </div>
     </div>
+    <footer class="foot">
+        <div>
+            <p>
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-node-js" title="Node JS"></i>
+                <i class="fa-brands fa-php" title="PHP"></i>
+                <i class="fa-brands fa-laravel" title="Laravel"></i>
+            </p>
+            <h5>Ⓒ AnezaCode</h5>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="script.js"></script>
