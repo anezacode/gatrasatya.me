@@ -20,8 +20,7 @@
 
 **Keahlian:**
 - Pemrograman Web (HTML, CSS, JS, PHP, SQL, MongoDB, Laravel)
-- Desain Grafis (Canva, Ibis Paint, Adobe Photoshop)
-- Ahli Microsoft Office (Word, PowerPoint, Excel, Access)
+- Microsoft Office (Word, PowerPoint, Excel)
 
 **Pengalaman Organisasi:**
 - Kepengurusan OSIS SMK Prestasi Prima (2023 - 2024)
