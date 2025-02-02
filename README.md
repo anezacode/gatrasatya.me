@@ -4,8 +4,6 @@
 
 **Jenis Kelamin:** Laki-laki
 
-**Usia:** 16 tahun
-
 **TTL:** Jakarta, 15 Mei 2008
 
 **Alamat:** Jl. Graha Cibubur View, Jatiraden, Jatisampurna, Bekasi, Jawa Barat, Indonesia
@@ -15,13 +13,14 @@
 - SMK Prestasi Prima (2023 - 2026)
 
 **Hobi:**
+- Learning
 - Koding
 - Gaming
-- Remix
+- Remixing
 
 **Keahlian:**
-- Pemrograman Web (HTML, CSS, JS, PHP, SQL, Framework)
-- Desain Grafis (Canva, Ibis Paint, Adobe Photoshop & Illustrator)
+- Pemrograman Web (HTML, CSS, JS, PHP, SQL, MongoDB, Laravel)
+- Desain Grafis (Canva, Ibis Paint, Adobe Photoshop)
 - Ahli Microsoft Office (Word, PowerPoint, Excel, Access)
 
 **Pengalaman Organisasi:**
