@@ -27,5 +27,5 @@
 - Kepala Divisi Web Orens Solution (2024 - sekarang)
 
 **Kontak:**
-- Email: anezacode@protob.me
+- Email: anezacode@proton.me
 - Website: https://bit.ly/gatrasatya
