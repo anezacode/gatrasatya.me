@@ -39,7 +39,6 @@ form.form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
 }
 
 h1.logo {
@@ -60,9 +59,6 @@ div.form-input {
     width: max-content;
     border-radius: 20px;
     margin-top: 16px;
-    display: flex;
-    flex-wrap: nowrap;
-    box-shadow: 0px 0px 5px 0.5px #555;
     cursor: not-allowed;
 }
 
@@ -84,7 +80,8 @@ div.form-input input[type="password"]:focus {
 
 div.form-input input[type="submit"] {
     font-family: 'poppins', sans-serif;
-    width: 50px;
+    width: 60px;
+    box-shadow: -10px 0px 10px -12px rgba(0,0,0,0.5);
     background-color: #999;
     border-radius: 20px;
     height: 100%;
@@ -94,7 +91,6 @@ div.form-input input[type="submit"] {
     border: none;
     color: #fff;
     cursor: not-allowed;
-    box-shadow: 0px 0px 2.5px 0.1px #555;
     vertical-align: 0.5px;
     outline: none;
 }
@@ -137,7 +133,6 @@ body._404 div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
 }
 
 p.tip {

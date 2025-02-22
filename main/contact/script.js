@@ -3,10 +3,15 @@ const nama = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const mess = document.getElementById("message");
+const sent = document.querySelector('.submission');
+const nav = document.getElementById('menu-checkbox');
 const log = "[4n3z4] ";
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log(log + "Content Loaded.");
+    nav.disabled = false;
+    sent.disabled = false;
+    mess.setAttribute('maxlength', '1000');
 });
 
 function closeBtn() {
@@ -14,12 +19,12 @@ function closeBtn() {
 }
 
 function sendEmail() {
-    const _0x3061b5 = document.getElementById("warns");
+    const notif = document.getElementById("warns");
     if (nama.value == "" || email.value == "" || subject.value == "" || mess.value == "") {
-        _0x3061b5.innerText = "Konten tidak boleh kosong!";
-        _0x3061b5.style.display = "block";
+        notif.innerText = "Form tidak boleh kosong!";
+        notif.style.display = "block";
         setTimeout(function() {
-            _0x3061b5.style.display = "none";
+            notif.style.display = "none";
         }, 1200);
     } else {
         const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,8 +56,8 @@ function sendEmail() {
 
 function setNotif() {
     console.log(log + "Email has been sent.");
+    document.getElementById("form").style.display = "none";
     document.getElementById("catch").style.display = "block";
-    document.getElementById("emailForm").style.display = "none";
     setTimeout(() => {
         window.location.reload();
     }, 3000);

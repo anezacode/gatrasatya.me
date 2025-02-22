@@ -20,10 +20,8 @@ function submitPassword() {
     if (passwordValue !== "5500") {
         console.log(log + "Password Incorrect.");
         submitBtn.style.backgroundColor = '#e50000';
-        submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #e50000';
         setTimeout(() => {
             submitBtn.style.backgroundColor = "#aaa";
-            submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #555';
             inputPassword.value = "";
         }, 500);
         return false;
@@ -32,10 +30,8 @@ function submitPassword() {
     if (passwordValue === "") {
         console.log(log + "Password Incorrect.");
         submitBtn.style.backgroundColor = "#e50000";
-        submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #e50000';
         setTimeout(() => {
             submitBtn.style.backgroundColor = "#aaa";
-            submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #555';
             inputPassword.value = "";
         }, 1000);
         return false;
@@ -43,7 +39,6 @@ function submitPassword() {
 
     console.log(log + "Password Correct.");
     submitBtn.style.backgroundColor = "#50cc00";
-    submitBtn.style.boxShadow = '0px 0px 2.5px 0.1px #50cc00';
     setTimeout(() => {
         window.location.href = "main/";
         console.log(log + "Redirecting.");

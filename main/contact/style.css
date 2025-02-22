@@ -165,7 +165,7 @@ div.content h1 {
     font-size: x-large;
 }
 
-form#emailForm {
+form#form {
     display: block;
     text-align: center;
 }
@@ -285,6 +285,13 @@ footer.foot div {
 footer.foot p, footer.foot h5 {
     vertical-align: middle;
 }
+
+textarea.mess {
+    scrollbar-width: thin;
+    scrollbar-color: #111 #fff;
+}
+
+
 
 i.fa-brands {
     margin-right: 5px;

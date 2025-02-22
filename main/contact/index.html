@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
     <div class="content">
         <h1>Contact Me</h1>
         <div class="contact">
-            <form id="emailForm">
+            <form id="form">
                 <div class="input-box">
                     <div class="field">
                         <input type="text" maxlength="32" placeholder="Username" class="item" id="name" autocomplete="off" required /><br />
@@ -51,11 +51,11 @@
                         <input type="text" maxlength="64" placeholder="Subject" class="item" id="subject" autocomplete="off" required /><br />
                     </div>
                     <div class="field">
-                        <textarea maxlength="256" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
+                        <textarea maxlength="1000" placeholder="Message" class="mess" id="message" rows="10"></textarea><br />
                         <span id="warns"></span>
                     </div>
                 </div>
-                <button onclick="sendEmail()" class="submission" type="submit">Send</button>
+                <button onclick="sendEmail()" class="submission" type="submit" disabled>Send</button>
             </form>
             <div class="catch" id="catch">
                 <h3>Thank You!</h3>

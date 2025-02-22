@@ -287,34 +287,6 @@ footer.foot {
     bottom: 0;
 }
 
-div.report {
-    width: 90%;
-    justify-self: center;
-}
-
-div.report-content {
-    display: grid;
-    justify-self: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
- 
-div.repo-project {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 20px 0;
-}
-
-div.report-content i {
-    font-size: 50px;
-    margin-right: 10px;
-}
-
-p.project-text span {
-    font-size: smaller;
-}
-
 div.attribute {
     padding: 10px 0 10px 0;
     width: 100%;

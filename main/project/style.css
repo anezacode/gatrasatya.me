@@ -183,7 +183,6 @@ div.project-mainbox {
 }
 
 div.project-subbox {
-    background-image: url('../../assets/images/img-banner.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -193,6 +192,30 @@ div.project-subbox {
     border-radius: 10px;
     transition: all 0.3s ease;
     overflow: hidden;
+}
+
+div.p1 {
+    background-image: url('../../assets/images/img-banner.webp');
+}
+
+div.p2 {
+    background-image: url('../../assets/images/img-banner.webp');
+}
+
+div.p3 {
+    background-image: url('../../assets/images/img-banner.webp');
+}
+
+div.p4 {
+    background-image: url('../../assets/images/img-banner.webp');
+}
+
+div.p5 {
+    background-image: url('../../assets/images/img-banner.webp');
+}
+
+div.p6 {
+    background-image: url('../../assets/images/img-banner.webp');
 }
 
 div.project-mainbox:hover, div.project-subbox:hover {
