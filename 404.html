@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
+<style>
+    body._404 {
+        background-color: #111;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+    }
+    
+    body._404 div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    p.tip {
+        user-select: none;
+        font-size: larger;
+        color: #555;
+    }
+    
+    span.click-return:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 640px) {
+        *, html {
+            zoom: 0.94;
+        }
+    }
+</style>
 <body class="_404">
     <div>
         <h1 class="logo">gatrasatya</h1>
