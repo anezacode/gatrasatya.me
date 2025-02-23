@@ -163,6 +163,7 @@ div.content h1 {
     margin: 20px;
     text-align: center;
     font-size: x-large;
+    text-decoration: underline;
 }
 
 form#form {
@@ -197,10 +198,10 @@ textarea.mess {
     max-height: 400px;
 }
 
-button[type=submit].submission {
-    width: 100%;
+button[type='submit'].submission {
+    width: 90%;
     max-width: 450px;
-    padding: 10px;
+    padding: 10px 0;
     border: 1px solid rgb(20,20,20);
     border-radius: 5px;
     background-color: rgb(20,20,20);
@@ -210,11 +211,11 @@ button[type=submit].submission {
     transition: 0.2s;
 }
 
-button[type=submit].submission:hover {
+button[type='submit'].submission:hover {
     background-color: darkslategray;
 }
 
-button[type=submit].submission:active {
+button[type='submit'].submission:active{
     transform: scale(0.95);
 }
 
@@ -232,7 +233,6 @@ div.catch {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-left: 5px solid rgb(60, 60, 60);
-    width: 95%;
     max-width: 440px;
     padding: 10px;
     justify-self: center;
@@ -291,18 +291,22 @@ textarea.mess {
     scrollbar-color: #111 #fff;
 }
 
-
-
 i.fa-brands {
     margin-right: 5px;
 }
 
 @media screen and (max-width: 640px) {
     div.content {
-        zoom: 0.94;
+        zoom: 0.90;
     }
 
     footer.foot {
+        zoom: 0.80;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.content {
         zoom: 0.80;
     }
 }

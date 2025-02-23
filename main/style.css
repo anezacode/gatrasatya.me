@@ -312,33 +312,13 @@ i.fa-brands {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 1080px) {
-    div.report-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-}
 
 @media screen and (max-width: 640px) {
     div.content {
-        zoom: 0.94;
-    }
-
-    div.report {
-        zoom: 0.94;
+        zoom: 0.80;
     }
 
     footer.foot {
         zoom: 0.80;
     }
-}
-
-@media screen and (max-width: 420px) {
-    div.content {
-        zoom: 0.80;
-    }
-
-    div.report-content {
-        zoom: 0.80;
-    }   
 }

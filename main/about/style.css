@@ -164,6 +164,7 @@ div.content h1 {
     margin: 20px;
     text-align: center;
     font-size: x-large;
+    text-decoration: underline;
 }
 
 footer.foot {
@@ -195,10 +196,17 @@ i.fa-brands {
 
 @media screen and (max-width: 640px) {
     div.content {
-        zoom: 0.94;
+        zoom: 0.90;
     }
 
     footer.foot {
+        zoom: 0.80;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    div.content {
         zoom: 0.80;
     }
 }
