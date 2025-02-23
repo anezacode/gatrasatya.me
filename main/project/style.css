@@ -171,7 +171,6 @@ div.project {
 }
 
 div.project-mainbox {
-    background-image: url('../../assets/images/stuffs/0.jpg');
     background-size: cover;
     background-position: center 0px;
     width: 100%;
@@ -209,7 +208,7 @@ div.project-subbox {
 
 p.desc {
     display: none;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 div.project-mainbox:hover p.desc,
@@ -217,11 +216,37 @@ div.project-subbox:hover p.desc {
     display: block;
 }
 
-/* img project */
+/* img project start */
 
-div.p1 {
+div.project-mainbox {
     background-image: url('../../assets/images/stuffs/1.jpg');
 }
+
+div.p1 {
+    background-image: url('../../assets/images/stuffs/2.jpg');
+}
+
+div.p2 {
+    background-image: url('../../assets/images/stuffs/3.jpg');
+}
+
+div.p3 {
+    background-image: url('../../assets/images/stuffs/4.jpg');
+}
+
+div.p4 {
+    background-image: url('../../assets/images/stuffs/0.jpg');
+}
+
+div.p5 {
+    background-image: url('../../assets/images/stuffs/0.jpg');
+}
+
+div.p6 {
+    background-image: url('../../assets/images/stuffs/0.jpg');
+}
+
+/* img project end */
 
 div.p1::before {
     content: "";
@@ -230,28 +255,9 @@ div.p1::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(50, 100, 200, 0.6);
+    background: rgba(50, 70, 200, 0.5);
 }
 
-div.p2 {
-    background-image: url('../../assets/images/stuffs/2.jpg');
-}
-
-div.p3 {
-    background-image: url('../../assets/images/stuffs/3.jpg');
-}
-
-div.p4 {
-    background-image: url('../../assets/images/stuffs/nil.jpg');
-}
-
-div.p5 {
-    background-image: url('../../assets/images/stuffs/nil.jpg');
-}
-
-div.p6 {
-    background-image: url('../../assets/images/stuffs/nil.jpg');
-}
 
 div.project-mainbox:hover, div.project-subbox:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
