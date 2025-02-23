@@ -2,8 +2,6 @@
 
 **Nama:** Anggatra Satya Putra N
 
-**Jenis Kelamin:** Laki-laki
-
 **TTL:** Jakarta, 15 Mei 2008
 
 **Alamat:** Jl. Graha Cibubur View, Jatiraden, Jatisampurna, Bekasi, Jawa Barat, Indonesia
@@ -19,13 +17,13 @@
 - Remixing
 
 **Keahlian:**
-- Pemrograman Web (HTML, CSS, JS, PHP, SQL, MongoDB, Laravel)
+- Pemrograman Web (HTML5, CSS3, Bootstrap, JS, PHP, SQL, MongoDB, Laravel)
 - Microsoft Office (Word, PowerPoint, Excel)
 
 **Pengalaman Organisasi:**
 - Kepengurusan OSIS SMK Prestasi Prima (2023 - 2024)
 - Kepala Divisi Web Orens Solution (2024 - sekarang)
 
-**Kontak:**
+**Koneksi:**
 - Email: anezacode@proton.me
 - Website: https://bit.ly/gatrasatya
