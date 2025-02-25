@@ -148,6 +148,6 @@ span.click-return:hover {
 
 @media screen and (max-width: 640px) {
     *, html {
-        zoom: 0.90;
+        zoom: 0.93;
     }
 }
