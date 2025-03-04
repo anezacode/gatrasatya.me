@@ -163,8 +163,21 @@ div.content {
 div.content h1 {
     margin: 20px;
     text-align: center;
-    font-size: x-large;
-    text-decoration: underline;
+    font-size: 32px;
+}
+
+div.profile {
+    display: flex;
+    align-items: center;
+}
+
+div.profile-img img{
+    width: 100%;
+    height: auto;
+}
+
+div.profile-tx {
+    align-items: center;
 }
 
 footer.foot {
@@ -197,6 +210,10 @@ i.fa-brands {
 @media screen and (max-width: 640px) {
     div.content {
         zoom: 0.90;
+    }
+
+    div.profile {
+        flex-wrap: wrap;
     }
 
     footer.foot {

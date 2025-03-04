@@ -162,15 +162,20 @@ div.content {
 div.content h1 {
     margin: 20px;
     text-align: center;
-    font-size: x-large;
-    text-decoration: underline;
+    font-size: 32px;
 }
 
 div.project {
     margin: 10px;
 }
 
-div.project-mainbox {
+div.project-web, div.project-game {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    grid-gap: 10px;
+}
+
+div.project-main-box {
     background-size: cover;
     background-position: center 0px;
     width: 100%;
@@ -183,7 +188,7 @@ div.project-mainbox {
     overflow: hidden;
 }
 
-div.project-mainbox::before {
+div.project-main-box::before {
     content: "";
     position: absolute;
     top: 0;
@@ -193,7 +198,7 @@ div.project-mainbox::before {
     background: rgba(0, 0, 0, 0.1);
 }
 
-div.project-subbox {
+div.project-box {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -208,62 +213,54 @@ div.project-subbox {
 
 p.desc {
     display: none;
-    opacity: 0.9;
+    color: #ddd;
 }
 
-div.project-mainbox:hover p.desc,
-div.project-subbox:hover p.desc {
+div.project-main-box:hover p.desc,
+div.project-box:hover p.desc {
     display: block;
 }
 
 /* img project start */
 
-div.project-mainbox {
+div.project-main-box {
     background-image: url('../../assets/images/stuffs/1.jpg');
 }
 
-div.p1 {
+div.kelas {
+    background-image: url('../../assets/images/stuffs/1.jpg');
+}
+
+div.buku-tamu {
     background-image: url('../../assets/images/stuffs/2.jpg');
 }
 
-div.p2 {
+div.get-out {
     background-image: url('../../assets/images/stuffs/3.jpg');
 }
 
-div.p3 {
+div.farwards {
     background-image: url('../../assets/images/stuffs/4.jpg');
-}
-
-div.p4 {
-    background-image: url('../../assets/images/stuffs/0.jpg');
-}
-
-div.p5 {
-    background-image: url('../../assets/images/stuffs/0.jpg');
-}
-
-div.p6 {
-    background-image: url('../../assets/images/stuffs/0.jpg');
 }
 
 /* img project end */
 
-div.p1::before {
+div.buku-tamu::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(50, 70, 200, 0.5);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 
-div.project-mainbox:hover, div.project-subbox:hover {
+div.project-main-box:hover, div.project-box:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-div.project-mainbox:active, div.project-subbox:active {
+div.project-main-box:active, div.project-box:active {
     transform: scale(0.95);
     filter: brightness(0.9);
 }
@@ -285,14 +282,9 @@ div.project-text span, div.project-text p {
     width: 90%;
 }
 
-div.project-mainbox:hover div.project-text, div.project-subbox:hover div.project-text {
+div.project-main-box:hover div.project-text,
+div.project-box:hover div.project-text {
     padding-bottom: 20px;
-}
-
-div.subcontent-project {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(160px, 1fr));
-    grid-gap: 10px;
 }
 
 footer.foot {
@@ -302,7 +294,7 @@ footer.foot {
     color: white;
     border-top: 1px solid #333;
     user-select: none;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
@@ -324,11 +316,11 @@ i.fa-brands {
 
 @media screen and (max-width: 1240px) {
     
-    div.subcontent-project {
+    div.project-web, div.project-game {
         grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
 
-    div.project-subbox p.desc {
+    div.project-box p.desc {
         display: block;
     }
 
@@ -342,15 +334,16 @@ i.fa-brands {
         zoom: 0.90;
     }
 
-    div.project-mainbox {
+    div.project-main-box {
         height: 300px;
     }
     
-    div.subcontent-project {
+    div.project-web, div.project-game {
         grid-template-columns: repeat(1, 1fr);
     }
 
     footer.foot {
+        position: relative;
         zoom: 0.80;
     }
 }

@@ -162,8 +162,7 @@ div.content {
 div.content h1 {
     margin: 20px;
     text-align: center;
-    font-size: x-large;
-    text-decoration: underline;
+    font-size: 32px;
 }
 
 form#form {
