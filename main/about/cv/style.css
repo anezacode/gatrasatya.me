@@ -1,0 +1,121 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-port {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.40fr 0.60fr;
+    /* Kertas A4 */
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.bi {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.port-one {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.profile {
+    margin: 40px 0 0 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.username {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.username p {
+    margin-top: 10px;
+}
+
+.contact {
+    padding: 10px 20px;
+}
+
+.contact div {
+    text-align: left;
+    line-height: 2;
+}
+
+.skill {
+    padding: 10px 20px;
+}
+
+.skill ul {
+    text-align: left;
+    margin: 0 20px;
+    line-height: 2;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.btn-back {
+    margin: 10px 0;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.port-two {
+    background-color: #fdfdfd;
+    padding: 40px 20px;
+    padding-right: 0;
+    color: black;
+}
+
+.port-two h4 {
+    background-color: #cccccc;
+    padding: 10px;
+    text-align: start;  
+    margin-bottom: 15px;
+}
+.section {
+    margin: 20px 0;
+}
+.section table {
+    width: 100%;
+}
+.section table th, .section table td {
+    padding: 10px;
+}
+.section table ul {
+    margin-left: 20px;
+}

@@ -169,7 +169,11 @@ div.project {
     margin: 10px;
 }
 
-div.project-web, div.project-game {
+div.project h2 {
+    margin: 10px 0;
+}
+
+div.project-web, div.project-game, div.project-contri {
     display: grid;
     grid-template-columns: repeat(3, minmax(160px, 1fr));
     grid-gap: 10px;
@@ -294,7 +298,7 @@ footer.foot {
     color: white;
     border-top: 1px solid #333;
     user-select: none;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
